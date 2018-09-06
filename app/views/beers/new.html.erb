@@ -1,1 +1,20 @@
 <h3>Add a New Beer</h3>
+
+<form>
+  <label>Beer Name: </label><br>
+  <input type="text" id="beer_name" name="beer[name]"><br>
+
+  <label>Description: </label><br>
+  <textarea id="beer_description" name="beer[description]"></textarea><br>
+
+  <label>ABV(Alcohol by Volume): </label><br>
+  <input type="text" id="beer_abv" name="beer[abv]"><br>
+
+  <label>Location: </label><br>
+  <input type="text" id="beer_location" name="beer[location]"><br>
+
+  <input type="submit" value="Submit Beer">
+
+  <!-- <%= params.inspect %> -->
+
+</form>
