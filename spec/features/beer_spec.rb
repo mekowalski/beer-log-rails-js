@@ -41,22 +41,21 @@ describe 'navigate' do
       expect(page).to have_content('Add a New Beer')
     end
 
-    it "displays a new beer form that redirects to the index page, which then contains the submitted beer's
-    name, description, abv and location" do
-      visit new_beer_path
-      fill_in 'beer_name', with: 'My newest beer'
-      fill_in 'beer_description', with: 'Newest beer description'
-      fill_in 'beer_abv', with: 'Newest beer ABV'
-      fill_in 'beer_location', with: 'Newest Beer Location'
-
-      click_on 'Submit Beer'
-
-      expect(path.current_path).to eq(beers_path)
-      expect(page).to have_content('My newest beer')
-      expect(page).to have_content('Newest beer description')
-      expect(page).to have_content('Newest beer ABV')
-      expect(page).to have_content('Newest Beer Location')
-    end
+    # it "displays a new beer form that redirects to the index page, which then contains the submitted beer's name, description, abv and location" do
+    #   visit new_beer_path
+    #   fill_in 'beer_name', with: 'Backside Stout'
+    #   fill_in 'beer_description', with: 'This stout is freaking delicious'
+    #   fill_in 'beer_abv', with: '6.20'
+    #   fill_in 'beer_location', with: 'Durango, CO'
+    #
+    #   click_on 'Submit Beer'
+    #
+    #   expect(page.current_path).to eq(beers_path)
+    #   expect(page).to have_content('Backside Stout')
+    #   expect(page).to have_content('This stout is freaking delicious')
+    #   expect(page).to have_content('6.20')
+    #   expect(page).to have_content('Durango, CO')
+    # end
   end
 
 end
