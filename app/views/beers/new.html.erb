@@ -1,20 +1,18 @@
 <h3>Add a New Beer</h3>
 
-<form action="<%= beers_path %>" method="POST">
-  <label>Beer Name: </label><br>
-  <input type="text" id="beer_name" name="beer[name]"><br>
+<%= form_tag beers_path do %>
+  <label>Beer Name: </label>
+  <%= text_field_tag :'beer[name]' %><br><br>
 
-  <label>Description: </label><br>
-  <textarea id="beer_description" name="beer[description]"></textarea><br>
+  <label>Description: </label>
+  <%= text_area_tag :'beer[description]' %><br><br>
 
-  <label>ABV(Alcohol by Volume): </label><br>
-  <input type="text" id="beer_abv" name="beer[abv]"><br>
+  <label>ABV(Alcohol by Volume): </label>
+  <%= text_field_tag :'beer[abv]' %><br><br>
 
   <label>Location: </label><br>
-  <input type="text" id="beer_location" name="beer[location]"><br>
+  <%= text_field_tag :'beer[location]'%><br><br>
 
-  <input type="submit" value="Submit Beer">
+  <%= submit_tag 'Submit Beer'%>
 
-  <!-- <%= params.inspect %> -->
-
-</form>
+<% end %>
