@@ -3,6 +3,6 @@ Rails.application.routes.draw do
 
   get '/about' => 'beers#about'
 
-  resources :beers, only: [:index, :show, :new]
+  resources :beers, only: [:index, :show, :new, :create]
 
 end
