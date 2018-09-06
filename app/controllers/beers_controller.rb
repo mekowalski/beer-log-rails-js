@@ -26,4 +26,11 @@ class BeersController < ApplicationController
     redirect_to beers_path(@beer)
   end
 
+  def edit
+    @beer = Beer.find(params[:id])
+  end
+
+  def update
+  end
+
 end

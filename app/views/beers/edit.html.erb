@@ -1,0 +1,18 @@
+<h3>Edit Beer</h3>
+
+<%= form_tag beers_path do %>
+  <label>Beer Name: </label>
+  <%= text_field_tag :'name' %><br><br>
+
+  <label>Description: </label>
+  <%= text_area_tag :'description' %><br><br>
+
+  <label>ABV(Alcohol by Volume): </label>
+  <%= text_field_tag :'abv' %><br><br>
+
+  <label>Location: </label><br>
+  <%= text_field_tag :'location'%><br><br>
+
+  <%= submit_tag 'Submit Beer'%>
+
+<% end %>
