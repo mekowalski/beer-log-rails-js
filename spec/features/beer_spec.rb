@@ -15,4 +15,9 @@ describe 'navigate' do
     visit "beers/#{@beer.id}"
     expect(page).to have_css("h1", text: "Backside Stout")
   end
+
+  it "shows the description on the show page in a p tag" do
+    visit "beers/#{@beer.id}"
+    expect(page).to have_css("p", text: "This stout is freaking delicious")
+  end
 end
