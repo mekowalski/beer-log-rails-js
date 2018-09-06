@@ -12,4 +12,8 @@ class BeersController < ApplicationController
     @beer = Beer.find(params[:id])
   end
 
+  def new
+
+  end
+
 end

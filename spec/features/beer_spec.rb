@@ -30,4 +30,11 @@ describe 'navigate' do
     end
   end
 
+  describe 'new beer' do
+    it "ensures that the form route works with the /new action" do
+      visit new_beer_path
+      expect(page.status_code).to eq(200)    
+    end
+  end
+
 end
