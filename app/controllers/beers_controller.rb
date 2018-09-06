@@ -16,8 +16,14 @@ class BeersController < ApplicationController
   end
 
   def create
-    Beer.create(name: params[:beer][:name], description: params[:beer][:description], abv: params[:beer][:abv], location: params[:beer][:location])
-    redirect_to beers_path
+    @beer = Beer.new
+    @beer.name = params[:name]
+    @beer.description = params[:description]
+    @beer.abv = params[:abv]
+    @beer.location = params[:location]
+    @beer.save
+
+    redirect_to beers_path(@beer)
   end
 
 end
