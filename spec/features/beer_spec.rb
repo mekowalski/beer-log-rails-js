@@ -25,9 +25,9 @@ describe 'navigate' do
     it "links to beer page" do
       second_beer = Beer.create(name: 'Draught Stout', description: 'This is another stout but from Guinness',
       abv: 4.2, location: 'Dublin, Ireland')
-      visit beer_path
+      visit beers_path
       expect(page).to have_link(second_beer.name, href: beer_path(second_beer))
     end
   end
-  
+
 end

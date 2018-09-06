@@ -1,3 +1,5 @@
-<% @beer.each do |beer| %>
-<%= beer.name %>
+<% @beers.each do |beer| %>
+  <div>
+    <%= link_to beer.name, beer_path(beer) %>
+  </div>
 <% end %>
