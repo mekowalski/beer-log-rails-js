@@ -1,21 +1,18 @@
 <h3>Edit Beer</h3>
 
-<%= form_for @beers do |f| %>
-  <%= f.label 'Beer Name:' %>
-  <%= f.text_field :name %><br><br>
+<%= form_tag beer_path(@beer), method: 'PUT' do %>
+  <label>Beer Name: </label>
+  <%= text_field_tag :name, @beer.name %><br><br>
 
-  <%= f.label 'Description:' %>
-  <%= f.text_area :description %><br><br>
+  <label>Description: </label>
+  <%= text_area_tag :description, @beer.description %><br><br>
 
-  <%= f.label 'ABV(Alcohol by Volume): '%>
-  <%= f.text_field :abv %><br><br>
+  <label>ABV(Alcohol by Volume): </label>
+  <%= text_field_tag :abv, @beer.abv %><br><br>
 
-  <%= f.label 'Location' %>
-  <%= f.text_field :location %><br><br>
+  <label>Location: </label><br>
+  <%= text_field_tag :location, @beer.location %><br><br>
 
-  <%= f.submit 'Submit Beer'%>
+  <%= submit_tag 'Submit Beer'%>
 
 <% end %>
-
-<!-- form_for takes care of determining @beer is not a new instance of Beer class and automatically
-sends to the update path -->

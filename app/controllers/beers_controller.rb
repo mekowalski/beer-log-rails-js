@@ -31,7 +31,10 @@ class BeersController < ApplicationController
   end
 
   def update
-    raise params.inspect
+    @beer = Beer.find(params[:id])
+    @beer.update(name: params[:name], description: params[:description], abv: params[:abv], location: params[:location])
+
+    redirect_to beer_path(@beer)
   end
 
 end
