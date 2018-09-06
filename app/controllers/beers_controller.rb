@@ -4,4 +4,8 @@ class BeersController < ApplicationController
     render 'about'
   end
 
+  def index
+    @beer = Beer.all
+  end
+
 end
