@@ -1,3 +1,3 @@
-class Beer
+class Beer < ActiveRecord::Base
 
 end
