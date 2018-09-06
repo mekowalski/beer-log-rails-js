@@ -8,4 +8,8 @@ class BeersController < ApplicationController
     @beer = Beer.all
   end
 
+  def show
+
+  end
+
 end
