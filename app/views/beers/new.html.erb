@@ -1,18 +1,18 @@
 <h3>Add a New Beer</h3>
 
-<%= form_tag beers_path do %>
+<%= form_for(@beer) do |f| %>
   <label>Beer Name: </label>
-  <%= text_field_tag :'name' %><br><br>
+  <%= f.text_field :name %><br><br>
 
   <label>Description: </label>
-  <%= text_area_tag :'description' %><br><br>
+  <%= f.text_area :description %><br><br>
 
   <label>ABV(Alcohol by Volume): </label>
-  <%= text_field_tag :'abv' %><br><br>
+  <%= f.text_field :abv %><br><br>
 
   <label>Location: </label><br>
-  <%= text_field_tag :'location'%><br><br>
+  <%= f.text_field :location %><br><br>
 
-  <%= submit_tag 'Submit Beer'%>
+  <%= f.submit %>
 
 <% end %>
