@@ -1,18 +1,32 @@
 <h3>Edit Beer</h3>
 
-<%= form_tag beer_path(@beer), method: 'PUT' do %>
+<%= form_for(@beer) do |f| %>
   <label>Beer Name: </label>
-  <%= text_field_tag :name, @beer.name %><br><br>
+  <%= f.text_field :name %><br><br>
 
   <label>Description: </label>
-  <%= text_area_tag :description, @beer.description %><br><br>
+  <%= f.text_area :description %><br><br>
 
   <label>ABV(Alcohol by Volume): </label>
-  <%= text_field_tag :abv, @beer.abv %><br><br>
+  <%= f.text_field :abv %><br><br>
 
   <label>Location: </label><br>
-  <%= text_field_tag :location, @beer.location %><br><br>
+  <%= f.text_field :location %><br><br>
 
-  <%= submit_tag 'Submit Beer'%>
+  <%= f.submit%>
 
 <% end %>
+
+<!--
+-refactor edit form from FORM_TAG to FORM_FOR
+-acces to @post instance var and pass that to form_for
+-also remove path arg & method,
+-form_for is smart enough to set that and know to utilize PUT dealing w/ pre-existing record
+-|f|: iterator var used on new form obj to allow dynamic assign form field elements to each beer data attr
+-no longer have to pass ed values manually
+-passing attr as a :symbol, automatically tells form field what model attr to associate with
+
+PUT vs PATCH
+PUT: ability to update entires object
+PATCH: simply updates elements that were changed
+ -->
