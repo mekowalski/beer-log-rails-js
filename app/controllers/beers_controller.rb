@@ -16,11 +16,7 @@ class BeersController < ApplicationController
   end
 
   def create
-    @beer = Beer.new
-    @beer.name = params[:name]
-    @beer.description = params[:description]
-    @beer.abv = params[:abv]
-    @beer.location = params[:location]
+    @beer = Beer.new(beer_params)
     @beer.save
 
     redirect_to beers_path(@beer)
@@ -43,3 +39,15 @@ class BeersController < ApplicationController
   end
 
 end
+#
+# def create
+#   @post = Post.new(params.require(:post).permit(:title, :description))
+#   @post.save
+#   redirect_to post_path(@post)
+# end
+#
+# def update
+#   @post = Post.find(params[:id])
+#   @post.update(params.require(:post).permit(:title))
+#   redirect_to post_path(@post)
+# end
