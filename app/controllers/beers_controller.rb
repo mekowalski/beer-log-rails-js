@@ -32,9 +32,14 @@ class BeersController < ApplicationController
 
   def update
     @beer = Beer.find(params[:id])
-    @beer.update(name: params[:name], description: params[:description], abv: params[:abv], location: params[:location])
+    @beer.update(beer_params)
 
     redirect_to beer_path(@beer)
+  end
+
+  private
+  def beer_params
+    params.require(:beer).permit(:name, :description, :abv, :location)
   end
 
 end
