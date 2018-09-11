@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   #i don't like the multiple words with routing & actions will make it better & nicer to look at eventually
   #this does work successfully in browser
 
+  resources :beer_styles, only: [:index]
+
   resources :beers, only: [:index, :show, :new, :create, :edit, :update]
   patch '/beers/:id', to: 'beer#update'
 
