@@ -9,7 +9,11 @@ that specific beer style-->
 <ul>
 
   <% @beer_styles.each do |beer_styles| %>
-    <li><%= link_to beer_styles.name%></li>
+    <li><%= link_to beer_styles.name %></li>
+    <!-- don't know the route for 2nd arg -->
+    <!-- beers_path will return '/beers' which is the index of all beers
+    but i need all the beers associated with that beerstyle.-->
+    <!-- have not yet made belongs_to and has_many associations -->
   <% end %>
 
 </ul>
