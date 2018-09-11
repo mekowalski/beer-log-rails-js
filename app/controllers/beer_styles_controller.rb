@@ -1,7 +1,7 @@
 class BeerStylesController < ApplicationController
 
-  def home
+  def beer_styles_home
     render :plain => 'Welcome to the Beer Styles page'
   end
-  
+
 end
