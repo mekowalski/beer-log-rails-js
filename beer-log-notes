@@ -6,8 +6,14 @@ Also want to CRUD with the beer
 -Update (edit) beer (why would i update a beer though, thinking cap)
 -Delete (destroy) beer
 
-a Beer will belong to a Company and will belong to a BeerStyle
+A Beer will belong to a Company and will belong to a BeerStyle
 -so i possibly need a company and beerstyle attribute in the DB schema
+eg: Colorado Kolsch will belong to Steamworks Brewing Co
 
 A BeerStyle will have many beers
 eg: stout will have Imperial Stout, Backside Stout, Draught Stout, etc
+
+A Company will have many beers and will have many BeerStyles(don't want to worry about beerstyle yet)
+eg: SteamWorks Brewing Co will have Colorado Kolsch, BackSide Stout, etc
+*the company should only show the beers that you had at that company. say I've had 4 different beers from
+Animas Brewing Company, then i want to see those 4 beers listed under Animas Brewing Company
