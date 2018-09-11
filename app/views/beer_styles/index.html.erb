@@ -6,19 +6,23 @@
 <h2>Beer Styles</h2>
 <!-- a list of beer styles -->
 <ul>
-  <li>Stout <---cliclable link showing all the associated beers of that style that have been tasted/logged below</li>
+  <!-- <li>Stout <---cliclable link showing all the associated beers of that style that have been tasted/logged below</li>
     <li>- Draught Stout</li>
     <li>- Imperial Stout</li>
     <li>- BackSide Stout</li>
     <li>- etc</li>
     <br>
-  <li>Lager</li>
+  <li>Lager</li> -->
   <!-- click on one of these and it will display the beers i have tried in that style -->
-  <li>Ale</li>
+  <!-- <li>Ale</li>
   <li>Amber</li>
   <li>Kolsch</li>
   <li>Pilsner</li>
   <li>Sour</li>
-  <li>Dubbel</li>
+  <li>Dubbel</li> -->
+
+  <% @beer_styles.each do |beer_styles| %>
+    <li><%= beer_styles.name %></li>
+  <% end %>
 
 </ul>
