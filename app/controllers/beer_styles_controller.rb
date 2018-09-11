@@ -1,7 +1,7 @@
 class BeerStylesController < ApplicationController
 
   def index
-    @beer_styles = BeerStyles.all
+    @beer_styles = BeerStyle.all
   end
 
 end
