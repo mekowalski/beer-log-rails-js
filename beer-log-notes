@@ -5,3 +5,9 @@ Also want to CRUD with the beer
 -Read (index/show) beer
 -Update (edit) beer (why would i update a beer though, thinking cap)
 -Delete (destroy) beer
+
+a Beer will belong to a Company and will belong to a BeerStyle
+-so i possibly need a company and beerstyle attribute in the DB schema
+
+A BeerStyle will have many beers
+eg: stout will have Imperial Stout, Backside Stout, Draught Stout, etc
