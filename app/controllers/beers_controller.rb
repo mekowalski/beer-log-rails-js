@@ -23,6 +23,7 @@ class BeersController < ApplicationController
       redirect_to beers_path(@beer)
     else
       render :new
+      #re-render :new template without throwing away the invalid @beer
     end
   end
 
