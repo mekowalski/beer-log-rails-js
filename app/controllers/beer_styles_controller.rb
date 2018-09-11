@@ -4,4 +4,8 @@ class BeerStylesController < ApplicationController
     render :plain => 'Welcome to the Beer Styles page'
   end
 
+  def index
+
+  end
+
 end
