@@ -23,7 +23,6 @@ class BeersController < ApplicationController
       redirect_to beers_path(@beer)
     else
       render :new
-      #re-render :new template without throwing away the invalid @beer
     end
   end
 
@@ -33,9 +32,12 @@ class BeersController < ApplicationController
 
   def update
     @beer = Beer.find(params[:id])
-    @beer.update(beer_params)
+    if @beer.update(beer_params)
+      redirect_to beer_path(@beer)
+    else
+      render :edit
+    end
 
-    redirect_to beer_path(@beer)
   end
 
   private
