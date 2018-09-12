@@ -18,8 +18,7 @@ class BeersController < ApplicationController
 
   def create
     @beer = Beer.new(beer_params)
-    if @beer.valid?
-      @beer.save
+    if @beer.save
       redirect_to beers_path(@beer)
     else
       render :new
