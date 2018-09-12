@@ -17,3 +17,5 @@ A Company will have many beers and will have many BeerStyles(don't want to worry
 eg: SteamWorks Brewing Co will have Colorado Kolsch, BackSide Stout, etc
 *the company should only show the beers that you had at that company. say I've had 4 different beers from
 Animas Brewing Company, then i want to see those 4 beers listed under Animas Brewing Company
+
+Finally at the AR Associations and will begin model relationships
