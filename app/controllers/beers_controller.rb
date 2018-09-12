@@ -39,14 +39,14 @@ class BeersController < ApplicationController
   end
 
   def destroy
-    load_beer.destroy
-    redirect_to beers_path
+    Beer.find(params[:id]).destroy
+    redirect_to beers_url
   end
 
   private
-  def load_beer
-    @beer = Beer.find(params[:id])
-  end
+  # def load_beer
+  #   @beer = Beer.find(params[:id])
+  # end
 
   def beer_params
     params.require(:beer).permit(:name, :description, :abv, :location)
