@@ -18,7 +18,8 @@ class BeersController < ApplicationController
 
   def create
     @beer = Beer.new(beer_params)
-    if @beer.save
+    if @beer.valid?
+      @beer.save
       redirect_to beers_path(@beer)
     else
       render :new
@@ -36,12 +37,11 @@ class BeersController < ApplicationController
     else
       render :edit
     end
-
   end
 
   private
   def beer_params
-    params.require(:beer).permit(:name, :description, :abv, :location)
+    params.permit(:name, :description, :abv, :location)
   end
-
+# .require(:beer)
 end
