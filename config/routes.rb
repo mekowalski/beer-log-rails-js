@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   resources :beer_styles, only: [:index]
 
-  resources :beers, only: [:index, :show, :new, :create, :edit, :update]
+  resources :beers
   patch '/beers/:id', to: 'beer#update'
 
 end
