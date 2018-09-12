@@ -8,4 +8,8 @@ class Beer < ActiveRecord::Base
   validates :description, presence: true
   validates :abv, presence: true
   validates :location, presence: true
+
+  def company_name
+    self.company.name
+  end
 end
