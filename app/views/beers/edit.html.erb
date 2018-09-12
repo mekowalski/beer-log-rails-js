@@ -1,10 +1,10 @@
 <h3>Edit Beer</h3>
 
-<%= form_for(@beer) do |f| %>
+<%= form_for @beer do |f| %>
   <% if @beer.errors.any? %>
   <div id="error_explanation">
     <h2>
-      <%= plralize(@beer.errors.count, 'error') %>
+      <%= pluralize(@beer.errors.count, 'error') %>
       stopped this beer from being saved
     </h2>
     <ul>
