@@ -1,4 +1,5 @@
 class BeersController < ApplicationController
+  before_action :load_beer, only: [:show, :edit, :update]
 
   def about
     render 'about'
@@ -9,7 +10,6 @@ class BeersController < ApplicationController
   end
 
   def show
-    @beer = Beer.find(params[:id])
   end
 
   def new
@@ -26,11 +26,9 @@ class BeersController < ApplicationController
   end
 
   def edit
-    @beer = Beer.find(params[:id])
   end
 
   def update
-    @beer = Beer.find(params[:id])
     if @beer.update(beer_params)
       redirect_to beer_path(@beer)
     else
@@ -39,14 +37,14 @@ class BeersController < ApplicationController
   end
 
   def destroy
-    Beer.find(params[:id]).destroy
+    load_beer.destroy
     redirect_to beers_url
   end
 
   private
-  # def load_beer
-  #   @beer = Beer.find(params[:id])
-  # end
+  def load_beer
+    @beer = Beer.find(params[:id])
+  end
 
   def beer_params
     params.require(:beer).permit(:name, :description, :abv, :location)
