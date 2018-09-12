@@ -38,8 +38,18 @@ class BeersController < ApplicationController
     end
   end
 
+  def destroy
+    load_beer.destroy
+    redirect_to beers_path
+  end
+
   private
+  def load_beer
+    @beer = Beer.find(params[:id])
+  end
+
   def beer_params
     params.permit(:name, :description, :abv, :location)
   end
+
 end
