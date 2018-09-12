@@ -1,7 +1,16 @@
 <h1>"Imma Buy You a Drank" Beers I have tasted</h1>
 
-<% @beers.each do |beer| %>
-  <div>
-    <%= link_to beer.name, beer_path(beer) %>
-  </div>
-<% end %>
+<%= link_to 'New Beer', new_beer_path %><br><br>
+<table>
+  <thead><tr>
+    <th>Name</th>
+    <th>Delete</th>
+  </tr>
+  </thead>
+  <% @beers.each do |beer| %>
+  <tbody>
+    <td><%= link_to beer.name, beer_path(beer) %></td>
+    <td><%= link_to 'Delete', beer, method: :DELETE, data: { confirm: "This is forever, do you really want to delete?" } %></td>
+  </tbody>
+  <% end %>
+</table>
