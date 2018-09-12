@@ -1,11 +1,11 @@
 class CompaniesController < ApplicationController
+  before_action :load_company, only: [:show, :edit, :update]
 
   def index
     @companies = Company.all
   end
 
   def show
-    @company = Company.find(params[:id])
   end
 
   def new
@@ -13,7 +13,7 @@ class CompaniesController < ApplicationController
   end
 
   def create
-    @company = Company.new(params[:name])
+    @company = Company.new(company_params)
     if @company.save
       redirect_to @company
     else
@@ -21,13 +21,10 @@ class CompaniesController < ApplicationController
   end
 
   def edit
-    @company = Company.find(params[:id])
   end
 
   def update
-    @company = Company.find(params[:id])
-    @company.update(params[:name])
-    if @company.save
+    if @company.update(company_params)
       redirect_to @company
     else
       render :edit
@@ -35,9 +32,16 @@ class CompaniesController < ApplicationController
   end
 
   def destroy
-    @company = Company.find(params[:id])
-    @company.destroy
+    load_company.destroy
     redirect_to companies_path
   end
 
+  private
+  def load_company
+    @company = Company.find(params[:id])
+  end
+
+  def company_params
+    params.require(:company).permit(params[:name])
+  end
 end
