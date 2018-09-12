@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   resources :companies
 
-  resources :beer_styles, only: [:index]
+  resources :beer_styles
 
   resources :beers
   patch '/beers/:id', to: 'beer#update'
