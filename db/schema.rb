@@ -10,10 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_12_214412) do
+ActiveRecord::Schema.define(version: 2018_09_12_214730) do
 
   create_table "beer_styles", force: :cascade do |t|
     t.string "name"
+
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -23,15 +24,18 @@ ActiveRecord::Schema.define(version: 2018_09_12_214412) do
     t.text "description"
     t.float "abv"
     t.string "location"
+    t.integer "beer_style_id"
+    t.integer "company_id"
+
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "beer_style_id"
   end
 
   create_table "companies", force: :cascade do |t|
+    t.string "name"
+
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "name"
   end
 
 end
