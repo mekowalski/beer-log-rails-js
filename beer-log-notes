@@ -35,6 +35,9 @@ and the errors display that both Company and Beer Style must exist
 -I need to create both forms now to include those models then the forms will work properly
 -Finish building CRUD actions for BeerStyles
 -Build respective views (index/delete, new & edit) for models
+-Add company and beerstyles to beer/new form
+-Company and BeerStyle WILL NOT be created independently, they will be created with Beer initialization
+-nested forms and collection_select
 
 *this isn't on the record therefore stating: trying to create beer and company relation in console and
 it's not working correctly, beer created but with nil :id, beer_style_id & company_id
