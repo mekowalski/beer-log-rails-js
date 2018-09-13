@@ -3,8 +3,7 @@
 <p>Description: <%= @beer.description %></p>
 <p>ABV(Alcohol by Volume): <%= @beer.abv %>% </p>
 <p>Location: <%= @beer.location %></p>
-<br><br>
-
+<br>
 <h2>Brewing Company: <%= link_to @beer.company_name, company_path(@beer.company) if @beer.company %></h2>
 
 <%= link_to 'Edit', edit_beer_path(@beer) %>

@@ -35,3 +35,8 @@ and the errors display that both Company and Beer Style must exist
 -I need to create both forms now to include those models then the forms will work properly
 -Finish building CRUD actions for BeerStyles
 -Build respective views (index/delete, new & edit) for models
+
+*this isn't on the record therefore stating: trying to create beer and company relation in console and
+it's not working correctly, beer created but with nil :id, beer_style_id & company_id
+company created successfully but cannot related with beer through @beer.companies << @company
+company successfully displays in company index*
