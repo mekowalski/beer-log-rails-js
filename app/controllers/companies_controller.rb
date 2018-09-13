@@ -18,6 +18,7 @@ class CompaniesController < ApplicationController
       redirect_to @company
     else
       render :new
+    end
   end
 
   def edit

@@ -20,6 +20,8 @@ class BeersController < ApplicationController
     @beer = Beer.new(beer_params)
     if @beer.save
       redirect_to beers_path(@beer)
+      #can i redirect_to just @beer? conpanies con has redirection to @company,
+      #not companies_path(@company), also much cleaner
     else
       render :new
     end
@@ -31,6 +33,8 @@ class BeersController < ApplicationController
   def update
     if @beer.update(beer_params)
       redirect_to beer_path(@beer)
+      #can i redirect_to just @beer? conpanies con has redirection to @company,
+      #not companies_path(@company), also much cleaner
     else
       render :edit
     end

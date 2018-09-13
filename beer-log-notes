@@ -33,3 +33,5 @@ Finally at the AR Associations and will begin model relationships
 -Playing with new and edit form to check functionality of forms, both work but now have AR associations
 and the errors display that both Company and Beer Style must exist
 -I need to create both forms now to include those models then the forms will work properly
+-Finish building CRUD actions for BeerStyles
+-Build respective views (index/delete, new & edit) for models
