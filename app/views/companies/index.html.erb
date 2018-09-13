@@ -1,7 +1,16 @@
-<h1>Maybe display the Company and all the beers I've tried at this company</h1>
+<!-- <h1>Maybe display the Company and all the beers I've tried at this company</h1>
 
 <ul>
   <li>Steamworks Brewing Co</li>
   <li>Animas Brewing Co</li>
   <li>Carver Brewing Co</li>
+</ul> -->
+
+<h1>Brewing Companies</h1>
+
+<ul>
+  <% @companies.each do |company| %>
+    <li><%= link_to company.name, company_path(company) %></li>
+    <%= company.beer_count %> <%= 'beer'.pluralize(company.beer_count) %>
+  <% end %>
 </ul>
