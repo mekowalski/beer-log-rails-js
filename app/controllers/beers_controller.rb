@@ -38,7 +38,7 @@ class BeersController < ApplicationController
 
   def destroy
     load_beer.destroy
-    redirect_to beers_url
+    redirect_to beers_path
   end
 
   private
