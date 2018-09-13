@@ -14,8 +14,8 @@ class CompaniesController < ApplicationController
 
   def create
     @company = Company.new(company_params)
-    if @company.save
-      redirect_to @company
+    if @company.save #this line is a reason why a new company is not creating. what is going on???
+      redirect_to companies_path(@company)
     else
       render :new
     end

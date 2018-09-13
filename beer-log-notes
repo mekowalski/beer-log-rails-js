@@ -40,3 +40,6 @@ and the errors display that both Company and Beer Style must exist
 it's not working correctly, beer created but with nil :id, beer_style_id & company_id
 company created successfully but cannot related with beer through @beer.companies << @company
 company successfully displays in company index*
+
+-is it a good idea to create Company and BeerStyle alone, without the association of Beer?
+-how would i associated the models with this way?
