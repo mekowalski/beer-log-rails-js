@@ -1,4 +1,5 @@
-I want to have a bung of beer with information of each beer
+091118
+I want to have a bunch of beer with information of each beer
 
 Also want to CRUD with the beer
 -Create (new) beer
@@ -18,9 +19,17 @@ eg: SteamWorks Brewing Co will have Colorado Kolsch, BackSide Stout, etc
 *the company should only show the beers that you had at that company. say I've had 4 different beers from
 Animas Brewing Company, then i want to see those 4 beers listed under Animas Brewing Company
 
+
+091218
 Finally at the AR Associations and will begin model relationships
 
 -Need to start building out controllers for Company and BeerStyle
 -Need to create index(maybe delete), new and edit views for Company and BeerStyle
 -Maybe seed the DB with fake data? I already have some data, not sure yet how to incorporate this
 -Then I should be able to begin displaying associations
+
+
+091318
+-Playing with new and edit form to check functionality of forms, both work but now have AR associations
+and the errors display that both Company and Beer Style must exist
+-I need to create both forms now to include those models then the forms will work properly
