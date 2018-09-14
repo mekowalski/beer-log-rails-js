@@ -52,3 +52,5 @@ company successfully displays in company index*
 -Continue building respective views for Models
 -Add Company and BeerStyle to beer/new form
 -nested forms and collection_select
+-right now beers/show is not displaying correct info `/companies/1` instead of `Carver Brewing Company`
+-not able to create a new company or beerstyle with beer initialization, only select current
