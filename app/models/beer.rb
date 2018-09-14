@@ -18,7 +18,7 @@ class Beer < ActiveRecord::Base
 
   def company_name=(name)
     self.company = Company.find_or_create_by(name: name)
-    @company_name = self.artist.name
+    @company_name = self.company.name
   end
 
   def company_name
