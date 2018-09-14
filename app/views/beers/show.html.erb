@@ -4,7 +4,7 @@
 <p>ABV(Alcohol by Volume): <%= @beer.abv %>% </p>
 <p>Location: <%= @beer.location %></p>
 <br>
-<h2>Brewing Company: <%= link_to @beer.company_name, company_path(@beer.company) if @beer.company %></h2>
+<h2>Brewing Company: <%= link_to @beer.company_name, @beer.company.name %></h2>
 <!-- the beer company is displaying the url of the beer company, not the name
 displaying: /companies/1 -->
 
