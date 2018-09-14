@@ -46,3 +46,9 @@ company successfully displays in company index*
 
 -is it a good idea to create Company and BeerStyle alone, without the association of Beer?
 -how would i associated the models with this way?
+
+
+091418
+-Continue building respective views for Models
+-Add Company and BeerStyle to beer/new form
+-nested forms and collection_select
