@@ -35,5 +35,15 @@
     <%= f.text_field :location %>
   </div><br><br>
 
+  <div class="field<%= 'field_with_errors' if @beer.errors[:company_id].any? %>">
+    <label>Company:</label>
+    <%= f.collection_select :company_id, Company.all, :id, :name %>
+  </div><br><br>
+
+  <div class="field<%= 'field_with_errors' if @beer.errors[:location].any? %>">
+    <label>Beer Style:</label>
+    <%= f.collection_select :beer_style_id, BeerStyle.all, :id, :name %>
+  </div><br><br>
+
   <%= f.submit %>
 <% end %>
