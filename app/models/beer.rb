@@ -9,7 +9,29 @@ class Beer < ActiveRecord::Base
   validates :abv, presence: true
   validates :location, presence: true
 
-  def company_name
-    self.company.name
+  def company_ids=(ids)
+    ids.each do |id|
+      beer = Beer.find(id)
+      self.beers << beer
+    end
   end
+
+  def company_name=(name)
+    self.company = Company.find_or_create_by(name: name)
+    @company_name = self.artist.name
+  end
+
+  def company_name
+    @company_name
+  end
+
+  def beer_style_name=(name)
+    self.beer_style = BeerStyle.find_or_create_by(name: name)
+    @beer_style_name = self.beer_style.name
+  end
+
+  def beer_style_name
+    @beer_style_name
+  end
+
 end
