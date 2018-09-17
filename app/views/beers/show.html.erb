@@ -5,12 +5,6 @@
 <p>Location: <%= @beer.location %></p>
 <br>
 <h2>Brewing Company: <%= link_to @beer.company.name, company_path(@beer.company) %></h2>
-<!-- this now is displaying name BUT...
- the link_to is supposed to take me to either `/beers/:id/companies/:id OR /companies/:id`
- instead the url is actually `http://localhost:3000/beers/Carver Brewing Company` so that's all wrong
- also think my error is present because i haven't gotten to nesting yet, not sure though -->
-<!-- previous beers created before associations are not showing. NoMethodError in Beers#show with
-link_to -->
 
 <%= link_to 'Edit', edit_beer_path(@beer) %>
 <%= link_to 'Delete', @beer, method: :delete, data: { confirm: "This is forever, do you really want to delete?" } %>

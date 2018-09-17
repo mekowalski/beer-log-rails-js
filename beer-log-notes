@@ -63,3 +63,4 @@ company still sends me to /beers/carver brewing company (beers#show private #loa
 -still need to somehow build the collection_select for style and company, as in build
 new instance of that class
 -removed all old beer data that didn't have company or style associated, help with L60
+-company url is finally fixed

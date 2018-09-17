@@ -5,5 +5,19 @@
   <%= f.text_field :name %>
   <br><br>
 
+  <%= f.fields_for :beers do |beer| %>
+    <%= beer.label :name %>
+    <%= beer.text_field :name %><br>
+
+    <%= beer.label :description %>
+    <%= beer.text_area :description %><br>
+
+    <%= beer.label :abv %>
+    <%= beer.text_field :abv %><br>
+
+    <%= beer.label :location %>
+    <%= beer.text_field :location %><br>
+  <% end %>
+
   <%= f.submit %>
 <% end %>
