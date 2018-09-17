@@ -16,10 +16,6 @@ class Beer < ActiveRecord::Base
   #   end
   # end
 
-  def company_attributes=(company)
-    self.company = Company.find_or_create_by(name: company.name)
-    self.company.update(company)
-  end
   #
   # def company_name=(name)
   #   self.company = Company.find_or_create_by(name: name)
