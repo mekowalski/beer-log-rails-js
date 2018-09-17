@@ -4,7 +4,7 @@
 <p>ABV(Alcohol by Volume): <%= @beer.abv %>% </p>
 <p>Location: <%= @beer.location %></p>
 <br>
-<h2>Brewing Company: <%= link_to @beer.company_name, @beer.company.name %></h2>
+<h2>Brewing Company: <%= link_to @beer.company.name, company_path(@beer.company) %></h2>
 <!-- this now is displaying name BUT...
  the link_to is supposed to take me to either `/beers/:id/companies/:id OR /companies/:id`
  instead the url is actually `http://localhost:3000/beers/Carver Brewing Company` so that's all wrong
