@@ -10,11 +10,12 @@ class CompaniesController < ApplicationController
 
   def new
     @company = Company.new
+    @company.beers.build
   end
 
   def create
     @company = Company.new(company_params)
-    if @company.save #this line is a reason why a new company is not creating. what is going on???
+    if @company.save
       redirect_to companies_path(@company)
     else
       render :new
