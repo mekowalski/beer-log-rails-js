@@ -60,3 +60,6 @@ company successfully displays in company index*
 -with older beers, i receive an error with beers#show regarding the link_to
 -more recent beer(only 1 currently) still running into the issue where clicking on the link_to for the
 company still sends me to /beers/carver brewing company (beers#show private #load_beer)
+-still need to somehow build the collection_select for style and company, as in build
+new instance of that class
+-removed all old beer data that didn't have company or style associated, help with L60
