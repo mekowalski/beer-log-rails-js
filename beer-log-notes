@@ -64,3 +64,5 @@ company still sends me to /beers/carver brewing company (beers#show private #loa
 new instance of that class
 -removed all old beer data that didn't have company or style associated, help with L60
 -company url is finally fixed
+
+-nested forms is confusing, i'm having so much trouble understanding this
