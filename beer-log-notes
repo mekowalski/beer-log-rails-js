@@ -54,3 +54,9 @@ company successfully displays in company index*
 -nested forms and collection_select
 -right now beers/show is not displaying correct info `/companies/1` instead of `Carver Brewing Company`
 -not able to create a new company or beerstyle with beer initialization, only select current
+
+
+091718
+-with older beers, i receive an error with beers#show regarding the link_to
+-more recent beer(only 1 currently) still running into the issue where clicking on the link_to for the
+company still sends me to /beers/carver brewing company (beers#show private #load_beer)
