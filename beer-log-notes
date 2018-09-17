@@ -68,3 +68,4 @@ new instance of that class
 -nested forms is confusing, i'm having so much trouble understanding this
 
 -DO I NEED TO CREATE A USER MODEL FOR A USER TO GO INTO THE BEER LOG AND LOG THE BEERS THEY'VE HAD?
+-why am i creating a new company form with an associated beer? is my nested form incorrect?
