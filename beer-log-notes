@@ -66,3 +66,5 @@ new instance of that class
 -company url is finally fixed
 
 -nested forms is confusing, i'm having so much trouble understanding this
+
+-DO I NEED TO CREATE A USER MODEL FOR A USER TO GO INTO THE BEER LOG AND LOG THE BEERS THEY'VE HAD?
