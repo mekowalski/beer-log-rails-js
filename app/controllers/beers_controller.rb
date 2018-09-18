@@ -14,6 +14,7 @@ class BeersController < ApplicationController
 
   def new
     @beer = Beer.new
+    @beer.build_company
   end
 
   def create

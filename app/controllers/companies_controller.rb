@@ -10,7 +10,7 @@ class CompaniesController < ApplicationController
 
   def new
     @company = Company.new
-    @company.beers.build
+    #@company.beers.build
   end
 
   def create
