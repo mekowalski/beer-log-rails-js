@@ -44,14 +44,6 @@ class CompaniesController < ApplicationController
   end
 
   def company_params
-    params.require(:company).permit(
-    :name,
-    beers_attributes: [
-      :name,
-      :description,
-      :abv,
-      :location
-      ]
-    )
+    params.require(:company).permit([:name])
   end
 end
