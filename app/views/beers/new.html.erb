@@ -35,11 +35,13 @@
     <%= f.text_field :location %>
   </div><br><br>
 
-  <h3>Select of create a Company</h3>
+  <h3>Select Company</h3>
   <div class="field<%= 'field_with_errors' if @beer.errors[:company_id].any? %>">
     <label>Company:</label>
-    <%= f.collection_select :company_id, Company.all, :id, :name %><br>
+    <%= f.collection_select :company_id, Company.all, :id, :name %>
+    <br>
 
+    <h3>Or Create a new Company</h3>
     <%= f.fields_for :company do |com| %>
       <%= com.label :name %>
       <%= com.text_field :name %>
