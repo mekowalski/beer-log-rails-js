@@ -48,10 +48,10 @@
     <% end %>
   </div><br><br>
 
-  <div class="field<%= 'field_with_errors' if @beer.errors[:location].any? %>">
+  <!-- <div class="field<%#= 'field_with_errors' if @beer.errors[:location].any? %>">
     <label>Beer Style:</label>
-    <%= f.collection_select :beer_style_id, BeerStyle.all, :id, :name %>
-  </div><br><br>
+    <#%= f.collection_select :beer_style_id, BeerStyle.all, :id, :name %>
+  </div><br><br> -->
 
   <%= f.submit %>
 <% end %>
