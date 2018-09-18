@@ -89,3 +89,12 @@ of new beer
 -4. i don't think i need a new form for company and beerstyle, just index and show
 -5. need to also associate beeerstyle with new beer from
 -6. destroy backside stout in order to clear data and make new beer with both associations
+
+-7. all the beer, new, nested forms, errors, collection_select, redirect and current routes are all
+successful
+-8. i'm trying to think of what i would utilize edit form_for/nested forms
+  a. if a user accidentally gives the wrong beerstyle, they can edit that
+  b. a user could possibly forget the beer style or company and needs to leave that option blank until
+  they come back to edit it with the correct associations
+  c. user could misspell the name of the beer, or THE FREAKING COMPANY OR BEER STYLE! i didn't think about
+  and edit form for these 2 models! ah this could be a common mishap
