@@ -10,5 +10,6 @@ class Beer < ActiveRecord::Base
   validates :location, presence: true
 
   accepts_nested_attributes_for :company, reject_if: :all_blank
+  accepts_nested_attributes_for :beer_style, reject_if: :all_blank
   #all_blank will not permeit creating a blank company
 end
