@@ -80,4 +80,12 @@ new instance of that class
 -3. in beers con
   a. #new will possibly use .build(maybe use that in nested form instead?)
   b. #beer_params needs nesting of compnay and beer_style
-  
+
+-FINALLY:
+-1. nested company form is successful
+-2. can create a new beer with an associated company or create a new company upon initialization
+of new beer
+-3. need to now incorporate this nested association in the edit form
+-4. i don't think i need a new form for company and beerstyle, just index and show
+-5. need to also associate beeerstyle with new beer from
+-6. destroy backside stout in order to clear data and make new beer with both associations
