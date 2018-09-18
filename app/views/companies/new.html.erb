@@ -6,7 +6,7 @@
   <%= f.text_field :name %>
   <br><br>
 
-  <%= f.fields_for :beers do |beer| %>
+  <%= f.fields_for @company.beers.build do |beer| %>
     <label>Beer Name: </label>
     <%= beer.label :name %>
     <%= beer.text_field :name %>

@@ -69,3 +69,15 @@ new instance of that class
 
 -DO I NEED TO CREATE A USER MODEL FOR A USER TO GO INTO THE BEER LOG AND LOG THE BEERS THEY'VE HAD?
 -why am i creating a new company form with an associated beer? is my nested form incorrect?
+
+
+091818
+-On a new environment(brother's laptop) starting up the application completely new
+-Unable to create a new beer with a new company and beerstyle.  still need to figure out form
+-Watch luisa's videos(they're super short)
+-1. nest company and beer_style with fields_for in beers/new
+-2. in beer model, utilize accepts_nested_attributes_for :beer_style and :company
+-3. in beers con
+  a. #new will possibly use .build(maybe use that in nested form instead?)
+  b. #beer_params needs nesting of compnay and beer_style
+  
