@@ -35,15 +35,35 @@
     <%= f.text_field :location %>
   </div><br><br>
 
-  <div class="field<%= 'field_with_errors' if @beer.errors[:company_id].any? %>">
-    <label>Company:</label>
-    <%= f.collection_select :company_id, Company.all, :id, :name %>
-  </div><br><br>
+  <table>
+    <thead><tr>
+      <th>Select Company</th>
+      <th><th>Or create a new company</th></th>
+    </tr>
+    </thead>
+    <tbody>
+      <td><%= f.collection_select :company_id, Company.all, :id, :name %></td>
+      <td><%= f.fields_for :company do |com| %></td>
+      <td><%= com.label :name %> <%= com.text_field :name %></td>
+      <% end %>
+    </tbody>
+  </table>
+  <br><br>
 
-  <div class="field<%= 'field_with_errors' if @beer.errors[:location].any? %>">
-    <label>Beer Style:</label>
-    <%= f.collection_select :beer_style_id, BeerStyle.all, :id, :name %>
-  </div><br><br>
+  <table>
+    <thead><tr>
+      <th>Select Beer Style</th>
+      <th><th>Or create new beer style</th></th>
+    </tr>
+    </thead>
+    <tbody>
+      <td><%= f.collection_select :beer_style_id, BeerStyle.all, :id, :name %></td>
+      <td><%= f.fields_for :beer_style do |bs| %></td>
+      <td><%= bs.label :name %> <%= bs.text_field :name %></td>
+      <% end %>
+    </tbody>
+  </table>
+  <br><br>
 
   <%= f.submit %>
 
