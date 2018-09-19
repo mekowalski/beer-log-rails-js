@@ -98,3 +98,8 @@ successful
   they come back to edit it with the correct associations
   c. user could misspell the name of the beer, or THE FREAKING COMPANY OR BEER STYLE! i didn't think about
   and edit form for these 2 models! ah this could be a common mishap
+
+
+091918
+-today i need to finish implementing nested forms for beers/edit
+-i also need to find a way to create beer without 1 or both company and beerstyle associations
