@@ -103,3 +103,14 @@ successful
 091918
 -today i need to finish implementing nested forms for beers/edit
 -i also need to find a way to create beer without 1 or both company and beerstyle associations
+
+-right now i don't want to focus so hard on logic, i know this app is beyond basic but i just
+need to know all the fundamentals.  i want to build my functions, make them successfully work
+then continue forward.  i can't keep lingerng on all the more complex scenarios for an edit form
+or blank fields
+-also with the edit form, i somehow(don't recall when) created a function for the field to be
+filled already with the attributes and associations. with the associations of beerstyle and company
+if that field is filled with the info it will then create a new company and beerstyle.  almost like
+a duplicate and i don't want that, therefore i removed the the option of the create field for edit
+
+-Moving onto bigger and better things like partials and auth and sessions etc.
