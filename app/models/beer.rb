@@ -13,3 +13,8 @@ class Beer < ActiveRecord::Base
   accepts_nested_attributes_for :beer_style, reject_if: :all_blank
   #all_blank will not permeit creating a blank company
 end
+
+
+#someone is suggesting that beer should also has_many beerstyles but 1 single beer will only have one
+#BeerStyle, it doesn't make sense that Draught Stout is a Stout & also another style such as Dark or Lager
+#a stout is a stout
