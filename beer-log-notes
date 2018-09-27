@@ -79,7 +79,7 @@ new instance of that class
 -2. in beer model, utilize accepts_nested_attributes_for :beer_style and :company
 -3. in beers con
   a. #new will possibly use .build(maybe use that in nested form instead?)
-  b. #beer_params needs nesting of compnay and beer_style
+  b. #beer_params needs nesting of company and beer_style
 
 -FINALLY:
 -1. nested company form is successful
@@ -87,7 +87,7 @@ new instance of that class
 of new beer
 -3. need to now incorporate this nested association in the edit form
 -4. i don't think i need a new form for company and beerstyle, just index and show
--5. need to also associate beeerstyle with new beer from
+-5. need to also associate beerstyle with new beer from
 -6. destroy backside stout in order to clear data and make new beer with both associations
 
 -7. all the beer, new, nested forms, errors, collection_select, redirect and current routes are all
@@ -124,3 +124,4 @@ a duplicate and i don't want that, therefore i removed the the option of the cre
 092718
 -working on has many through today and trying to move onto the 2 videos i wanted to watch and finish
 yesterday
+-beer show page needs to also include beer style alongside company
