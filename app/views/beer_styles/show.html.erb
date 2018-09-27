@@ -1,8 +1,7 @@
 <h1>Beer Style: <%= @beer_style.name %></h1>
 
 <ul>
-  <% raise params.inspect %>
-  <% @beer_style.companies.each do |company| %>
+  <% @beer_style.companies.uniq.each do |company| %>
     <li><%= link_to company.name, company_path(company) %></li>
   <% end %>
 </ul>
