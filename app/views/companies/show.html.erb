@@ -1,7 +1,0 @@
-<h1>Brewing Company: <%= @company.name %></h1>
-
-<ul>
-  <% @company.beers.each do |beer| %>
-    <li><%= link_to beer.name, beer_path(beer) %></li>
-  <% end %>
-</ul>
