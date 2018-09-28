@@ -126,3 +126,9 @@ a duplicate and i don't want that, therefore i removed the the option of the cre
 yesterday
 -beer show page needs to also include beer style alongside company
 -beer style show is correct and links work BUT... running into issue of exact dupe of company
+
+
+092818
+-continue with 2 videos
+  1. has many through in forms
+  2. deep dive into nested forms
