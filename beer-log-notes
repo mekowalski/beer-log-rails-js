@@ -132,3 +132,19 @@ yesterday
 -continue with 2 videos
   1. has many through in forms
   2. deep dive into nested forms
+
+
+100118
+-is has_many through in forms useful for me?
+-first:  my beerstyle model and company model both have a reciprocating association, currently in my
+beerstyle show page i can see the company that has the beerstyle(that i have tried).  my company show page
+displays on the beers of that company.  i could also display the beerstyles associated with that company,
+if i wanted to
+-second: has many through in forms, is this abstraction needed?  i already have implemented the option of
+selecting an existing instance or creating a new instance.  from the lesson, it seems that i'm just
+building this implementation a different way, that i just haven't understood
+-third: i don't understand the part in has many though in forms where i would create a join table and model
+of beer_style_companies. this part of the join table is a bit confusing to me
+-since i'm already able to display relationships with models do i need to use an abstraction of has many
+through in forms with _ids= and join tables of beer_style_companies? i'm overwhelmed with this and
+want to move on but i know i should try to understand the purpose of this
