@@ -1,7 +1,15 @@
 <h1>Brewing Company: <%= @company.name %></h1>
 
+<h2>Beers</h2>
 <ul>
   <% @company.beers.each do |beer| %>
     <li><%= link_to beer.name, beer_path(beer) %></li>
+  <% end %>
+</ul>
+
+<h2>Beer Styles</h2>
+<ul>
+  <% @company.beer_styles.uniq.each do |beer_style| %>
+    <li><%= link_to beer_style.name, beer_style_path(beer_style) %></li>
   <% end %>
 </ul>

@@ -4,16 +4,9 @@
 <br><br>
 
 <h2>Beer Styles</h2>
-<!-- a list of beer styles that are clickable and dispalys the associated beers i've tasted that are
-that specific beer style-->
-<ul>
 
+<ul>
   <% @beer_styles.each do |beer_style| %>
     <li><%= link_to beer_style.name, beer_style_path(beer_style) %></li>
-    <!-- don't know the route for 2nd arg -->
-    <!-- beers_path will return '/beers' which is the index of all beers
-    but i need all the beers associated with that beerstyle.-->
-    <!-- have not yet made belongs_to and has_many associations -->
   <% end %>
-
 </ul>
