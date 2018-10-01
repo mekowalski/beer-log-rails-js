@@ -7,4 +7,5 @@ class BeerStylesController < ApplicationController
   def show
     @beer_style = BeerStyle.find(params[:id])
   end
+  
 end

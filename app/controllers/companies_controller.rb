@@ -1,5 +1,4 @@
 class CompaniesController < ApplicationController
-  # before_action :load_company, only: [:show, :edit, :update]
 
   def index
     @companies = Company.all
@@ -9,45 +8,4 @@ class CompaniesController < ApplicationController
     @company = Company.find(params[:id])
   end
 
-  # def new
-  #   @company = Company.new
-  # end
-  #
-  # def create
-  #   @company = Company.new(company_params)
-  #   if @company.save
-  #     redirect_to @company
-  #   else
-  #     render :new
-  #   end
-  # end
-  #
-  # def edit
-  # end
-  #
-  # def update
-  #   if @company.update(company_params)
-  #     redirect_to @company
-  #   else
-  #     render :edit
-  #   end
-  # end
-  #
-  # def destroy
-  #   load_company.destroy
-  #   redirect_to companies_path
-  # end
-  #
-  # private
-  # def load_company
-  #   @company = Company.find(params[:id])
-  # end
-  #
-  # def company_params
-  #   params.require(:company).permit([:name])
-  # end
 end
-
-# okay, creating a new beer with beerstyle works properly without all theses commented actions
-# thinking this is not necessary for creation of beerstyle with assocation of beer and company
-# all model associations still work and display properly
