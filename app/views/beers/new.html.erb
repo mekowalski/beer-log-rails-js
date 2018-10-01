@@ -42,7 +42,7 @@
     </tr>
     </thead>
     <tbody>
-      <td><%= f.collection_select :company_id, Company.all, :id, :name %></td>
+      <td><%= f.collection_select :company_id, Company.all, :id, :name, {:include_blank => true} %></td>
       <td><%= f.fields_for :company do |com| %></td>
       <td><%= com.label :name %> <%= com.text_field :name %></td>
       <% end %>
@@ -57,7 +57,7 @@
     </tr>
     </thead>
     <tbody>
-      <td><%= f.collection_select :beer_style_id, BeerStyle.all, :id, :name %></td>
+      <td><%= f.collection_select :beer_style_id, BeerStyle.all, :id, :name, {:include_blank => true} %></td>
       <td><%= f.fields_for :beer_style do |bs| %></td>
       <td><%= bs.label :name %> <%= bs.text_field :name %></td>
       <% end %>
