@@ -148,3 +148,9 @@ of beer_style_companies. this part of the join table is a bit confusing to me
 -since i'm already able to display relationships with models do i need to use an abstraction of has many
 through in forms with _ids= and join tables of beer_style_companies? i'm overwhelmed with this and
 want to move on but i know i should try to understand the purpose of this
+
+-does beer style need to have a destroy, edit, update, new even?
+-company has REST but is that necessary?  do i care to modify or delete either models?
+-company also has new while beer style doesn't.  not sure how this works, both models are instantiated
+with new beer.
+-maybe just test company actions to see what is necessary, try making code DRY with company company con
