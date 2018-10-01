@@ -47,3 +47,7 @@ class CompaniesController < ApplicationController
   #   params.require(:company).permit([:name])
   # end
 end
+
+# okay, creating a new beer with beerstyle works properly without all theses commented actions
+# thinking this is not necessary for creation of beerstyle with assocation of beer and company
+# all model associations still work and display properly
