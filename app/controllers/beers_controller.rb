@@ -1,8 +1,8 @@
 class BeersController < ApplicationController
   before_action :load_beer, only: [:show, :edit, :update]
 
-  def about
-    render 'about'
+  def home
+    render 'home'
   end
 
   def index
