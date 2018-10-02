@@ -50,8 +50,8 @@ class BeersController < ApplicationController
 
   def beer_params
     params.require(:beer).permit(:name, :description, :abv, :location, :company_id, :beer_style_id,
-    company_attributes: [:name],
-    beer_style_attributes: [:name])
+    company_attributes: [:name], #helps with nested forms
+    beer_style_attributes: [:name] #helps with nested forms)
   end
 
 end
