@@ -177,4 +177,5 @@ home of the application
 -OKAY WAIT, how do i do this with the collection_select?
   1. my new form has a select & create new company and/or beer style
   2. edit form only has collection_select
-  3. how do i remove the repeated code? both have very similar relationship options 
+  3. how do i remove the repeated code? both have very similar relationship options
+  4. will this work with a formbuilder? i'm creating it in the _form and calling the f.whatever in new/edit
