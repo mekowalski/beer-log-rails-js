@@ -174,3 +174,7 @@ home of the application
 
 -create Partials for beers/new and beers/edit where i can
 -both have very similar forms: error_explanations, field_with_errors, label and formbuilder
+-OKAY WAIT, how do i do this with the collection_select?
+  1. my new form has a select & create new company and/or beer style
+  2. edit form only has collection_select
+  3. how do i remove the repeated code? both have very similar relationship options 
