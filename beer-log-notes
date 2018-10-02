@@ -154,3 +154,8 @@ want to move on but i know i should try to understand the purpose of this
 -company also has new while beer style doesn't.  not sure how this works, both models are instantiated
 with new beer.
 -maybe just test company actions to see what is necessary, try making code DRY with company company con
+
+
+100218
+-Work on Layout and Partials section
+-
