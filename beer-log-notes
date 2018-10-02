@@ -179,3 +179,4 @@ home of the application
   2. edit form only has collection_select
   3. how do i remove the repeated code? both have very similar relationship options
   4. will this work with a formbuilder? i'm creating it in the _form and calling the f.whatever in new/edit
+  5. maybe i can create a separate formbuilder for the collection_select part of new and edit
