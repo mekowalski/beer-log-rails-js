@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get '/' => 'beers#about' #this is kind of nice and i can use home buttom to get to index but not in love
+  get '/beers', to: 'application#about' #this is kind of nice and i can use home buttom to get to index but not in love
 
   resources :companies
 
