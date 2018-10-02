@@ -161,4 +161,6 @@ with new beer.
 -do i have nested forms? i only have two forms:new and edit. neither of these are nested, they're very one
 layer
 -i guess the only nesting i have is when a beer is created with beerstyle and company "nested" in the form
--well i have the nested form BUT... am i nesting it in the form? not quite
+-well i have the nested form BUT... am i nesting it in the form?
+
+-okay so i do have nested form laid out correctly in my application
