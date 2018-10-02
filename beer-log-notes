@@ -168,4 +168,6 @@ layer
 -working on layouts for beer log application
 -figuring out if i want to use application con or beers con for layout files
 -also working on partials
-(this is what i wanted to really get into today!!! :D ) 
+(this is what i wanted to really get into today!!! :D )
+-HOME button should go to home and maybe i should have a BEERS button but the beer index is basically the
+home of the application
