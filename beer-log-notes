@@ -171,3 +171,6 @@ layer
 (this is what i wanted to really get into today!!! :D )
 -HOME button should go to home and maybe i should have a BEERS button but the beer index is basically the
 home of the application
+
+-create Partials for beers/new and beers/edit where i can
+-both have very similar forms: error_explanations, field_with_errors, label and formbuilder
