@@ -14,8 +14,8 @@ class BeersController < ApplicationController
 
   def new
     @beer = Beer.new
-    @beer.build_company #helps with neste forms, method rpvided when with belongs_to relationship
-    @beer.build_beer_style #helps with neste forms, method rpvided when with belongs_to relationship
+    @beer.build_company
+    @beer.build_beer_style
   end
 
   def create

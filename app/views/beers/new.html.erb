@@ -43,10 +43,8 @@
     </thead>
     <tbody>
       <td><%= f.collection_select :company_id, Company.all, :id, :name, {:include_blank => true} %></td>
-      <td><%= f.fields_for :company do |com| %></td> <%#= fields_for provides basic nested forms%>
+      <td><%= f.fields_for :company do |com| %></td>
       <td><%= com.label :name %> <%= com.text_field :name %></td>
-      <!-- L47, text_field: <input type="text" name="beer[company_attributes][name]" id="beer_company_attributes_name">
-      provides nested forms-->
       <% end %>
     </tbody>
   </table>
@@ -60,9 +58,7 @@
     </thead>
     <tbody>
       <td><%= f.collection_select :beer_style_id, BeerStyle.all, :id, :name, {:include_blank => true} %></td>
-      <td><%= f.fields_for :beer_style do |bs| %></td> <%#= fields_for provides basic nested forms%>
-      <!-- L63, text_field:<input type="text" name="beer[beer_style_attributes][name]" id="beer_beer_style_attributes_name">
-      also provides nested forms-->
+      <td><%= f.fields_for :beer_style do |bs| %></td>
       <td><%= bs.label :name %> <%= bs.text_field :name %></td>
       <% end %>
     </tbody>
