@@ -10,9 +10,9 @@ class BeerStylesController < ApplicationController
     render template: 'beer_styles/index'
   end
 
-  # def show
-  #   @beer_style = BeerStyle.find(params[:id])
-  # end
+  def show
+    @beer_style = BeerStyle.find(params[:id])
+  end
 
   def beer
     @beer_style = BeerStyle.find(params[:id])
