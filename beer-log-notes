@@ -194,3 +194,5 @@ home of the application
 
 -working on routing nested resources, nothing has changed in the URL, i may need to actually implement
  actions that are suggested
+-my associations and displays are already working in the way the nested routes are suggesting
+-the thing is i actually don't have nested routes, i just have the behavior
