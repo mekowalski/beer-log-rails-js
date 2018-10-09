@@ -197,3 +197,4 @@ home of the application
 -my associations and displays are already working in the way the nested routes are suggesting
 -the thing is i actually don't have nested routes, i just have the behavior
 -this is the URL result, no bueno: http://localhost:3000/beers?utf8=%E2%9C%93&beer_style=3&commit=Filter
+-also now beerstyle filter works BUT the beerstyle show page is not working
