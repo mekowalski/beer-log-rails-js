@@ -1,11 +1,15 @@
 <h1>"Imma Buy You a Drank" Beers I have tasted</h1>
 
+<% if !params[:beer_style].blank? %>
+  <% @beers = Beer.where(beer_style: params[:beer_style]) %>
+<% end %>
+
 <%= link_to 'New Beer', new_beer_path %><br><br>
 
 <div>
   <h3>Filter Beer</h3>
   <%= form_tag('/beers', method: 'get') do %>
-    <%= select_tag 'beer', options_from_collection_for_select(Beer.all, 'id', 'name'), include_blank: true %>
+    <%= select_tag 'beer_style', options_from_collection_for_select(BeerStyle.all, 'id', 'name'), include_blank: true %>
     <%= submit_tag 'Filter' %>
   <% end %>
 </div>

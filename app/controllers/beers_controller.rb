@@ -1,5 +1,7 @@
 class BeersController < ApplicationController
   before_action :load_beer, only: [:show, :edit, :update]
+  helper_method :params
+  #can use helper_method to expose/make available a con#action in view but not a good idea
 
   def home
     render 'home'
