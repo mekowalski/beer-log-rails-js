@@ -10,7 +10,6 @@ class Beer < ActiveRecord::Base
   accepts_nested_attributes_for :company, reject_if: :all_blank
   accepts_nested_attributes_for :beer_style, reject_if: :all_blank
 
-  # step 1 of Correction
   def self.by_beer_style(beer_style_id)
     where(beer_style: beer_style_id)
   end

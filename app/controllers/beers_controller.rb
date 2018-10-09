@@ -8,7 +8,6 @@ class BeersController < ApplicationController
   def index
     @beer_styles = BeerStyle.all
     if ! params[:beer_style].blank?
-      # step 2 of Correction
       @beers = Beer.by_beer_style(params[:beer_style])
     else
       @beers = Beer.all
