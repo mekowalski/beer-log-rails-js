@@ -13,6 +13,12 @@ class BeersController < ApplicationController
     #provide list of beerstyles to view for filter control
     @beer_styles = BeerStyle.all
 
+    #filter @beers list based on user input of beerstyles
+    if ! params[:beer_style].blank?
+      @beers = Beer.where(beer_style: params[:beer_style])
+    else
+      @beers = Beer.all
+    end
   end
 
   def show
