@@ -191,3 +191,6 @@ home of the application
 
 -Eventually figure out the partial for new/edit forms to allow submit button to be on it's own, i don't
  know how to do this yet
+
+-working on routing nested resources, nothing has changed in the URL, i may need to actually implement
+ actions that are suggested
