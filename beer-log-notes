@@ -200,3 +200,6 @@ home of the application
 -also now beerstyle filter works BUT the beerstyle show page is not working
 -okay, i needed beerstyles#show(DUH), i still don't have nested routes though
 -now trying to utilize nested resource BUT my beers/index is not working!!!
+-corrected beers resource
+
+-asking about Helpers and the purpose of when to and why use them
