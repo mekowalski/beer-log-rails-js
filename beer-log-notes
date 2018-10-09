@@ -199,3 +199,4 @@ home of the application
 -this is the URL result, no bueno: http://localhost:3000/beers?utf8=%E2%9C%93&beer_style=3&commit=Filter
 -also now beerstyle filter works BUT the beerstyle show page is not working
 -okay, i needed beerstyles#show(DUH), i still don't have nested routes though
+-now trying to utilize nested resource BUT my beers/index is not working!!!
