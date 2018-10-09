@@ -1,8 +1,6 @@
 <h1>"Imma Buy You a Drank" Beers I have tasted</h1>
 
-<% if !params[:beer_style].blank? %>
-  <% @beers = Beer.where(beer_style: params[:beer_style]) %>
-<% end %>
+<!-- step 1 of Correction -->
 
 <%= link_to 'New Beer', new_beer_path %><br><br>
 
