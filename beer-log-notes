@@ -196,3 +196,4 @@ home of the application
  actions that are suggested
 -my associations and displays are already working in the way the nested routes are suggesting
 -the thing is i actually don't have nested routes, i just have the behavior
+-this is the URL result, no bueno: http://localhost:3000/beers?utf8=%E2%9C%93&beer_style=3&commit=Filter
