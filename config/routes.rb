@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   resources :companies
 
   resources :beer_styles
+  get 'beerstyles/:id/beers'
+  get 'beerstyles/:id/beers/:id'
 
   resources :beers
   patch '/beers/:id', to: 'beer#update'
