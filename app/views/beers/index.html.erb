@@ -7,7 +7,8 @@
 <div>
   <h3>Filter Beer</h3>
   <%= form_tag('/beers', method: 'get') do %>
-    <%= select_tag 'beer_style', options_from_collection_for_select(BeerStyle.all, 'id', 'name'), include_blank: true %>
+    <%= select_tag 'beer_style', options_from_collection_for_select(@beer_style, 'id', 'name'), include_blank: true %>
+    <!-- step 2 of Correction -->
     <%= submit_tag 'Filter' %>
   <% end %>
 </div>

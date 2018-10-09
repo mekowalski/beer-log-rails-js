@@ -1,14 +1,18 @@
 class BeersController < ApplicationController
   before_action :load_beer, only: [:show, :edit, :update]
-  helper_method :params
-  #can use helper_method to expose/make available a con#action in view but not a good idea
+  # step 3 of Correction
 
   def home
     render 'home'
   end
 
   def index
-    @beers = Beer.all
+    #@beers = Beer.all
+    # step 3 of Correction
+
+    #provide list of beerstyles to view for filter control
+    @beer_styles = BeerStyle.all
+
   end
 
   def show
