@@ -213,3 +213,16 @@ home of the application
 
 -currently Company displays both beer and beer styles associated
 -maybe i could try to nest a model under Company and see what happens
+
+-i feel like i just made kind of a mess with all this nesting because i didn't begin following the proper
+ model relationships from the beginning
+-should i just nest beerstyle and beer under company? because company has_many of both models
+-makes sense(to me) to display both models under a company(as i did in the company show view)
+-may need to really rework nesting from the beginning and correctly
+-technically only beerstyle#index has been modified for filter function
+ 1. fix beerstyle filter(or maybe keep it because it's a good feature)
+ 2. beer should be nested under company
+ 3. beerstyle should be nested under company
+ 4. would i rework the Company Con in order for nested resource routes to work? currently some of it works
+ 5. fix companies/:id/beer_styles/:id beerstyle#show
+ 6. how do i fix /beer_styles/:id (this is terrible)

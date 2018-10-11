@@ -1,5 +1,5 @@
 <h1>Beer Style: <%= @beer_style.name %></h1>
-<!-- ^^^this is an issue currently. undefined method 'name' for nil:NilClass -->
+
 <ul>
   <% @beer_style.companies.uniq.each do |company| %>
     <li><%= link_to company.name, company_path(company) %></li>
