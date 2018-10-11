@@ -203,3 +203,10 @@ home of the application
 -corrected beers resource
 
 -asking about Helpers and the purpose of when to and why use them
+
+
+101118
+-nested routes still aren't present, i just have normal routes
+-i think what's happening is that i nested Beer resource under BeerStyle but in my beerstyle views
+ i'm displaying the link to the associated company not beer
+-maybe i need to rearrange my filter, views and my nested resource to match that of my associations
