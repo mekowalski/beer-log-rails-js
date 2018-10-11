@@ -5,7 +5,7 @@
 <p>Location: <%= @beer.location %></p>
 <br>
 <h2>Brewing Company: <%= link_to @beer.company.name, company_path(@beer.company) %></h2>
-<h2>Beer Style: <%= link_to @beer.beer_style.name, beer_style_path(@beer.beer_style)%></h2>
+<h2>Beer Style: <%= link_to @beer.beer_style.name, company_beer_style_path(@beer.beer_style)%></h2>
 
 <%= link_to 'Edit', edit_beer_path(@beer) %>
 <%= link_to 'Delete', @beer, method: :delete, data: { confirm: "This is forever, do you really want to delete?" } %>

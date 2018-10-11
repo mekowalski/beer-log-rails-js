@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   resources :companies do
     resources :beer_styles
+    resources :beers, only: [:index, :show]
   end
 
   resource :beer_styles
