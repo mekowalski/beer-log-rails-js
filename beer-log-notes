@@ -226,3 +226,4 @@ home of the application
  4. would i rework the Company Con in order for nested resource routes to work? currently some of it works
  5. fix companies/:id/beer_styles/:id beerstyle#show
  6. how do i fix /beer_styles/:id (this is terrible)
+ 7. how do i fix this---> http://localhost:3000/beers?utf8=%E2%9C%93&beer_style=2&commit=Filter (horrible)
