@@ -210,3 +210,6 @@ home of the application
 -i think what's happening is that i nested Beer resource under BeerStyle but in my beerstyle views
  i'm displaying the link to the associated company not beer
 -maybe i need to rearrange my filter, views and my nested resource to match that of my associations
+
+-currently Company displays both beer and beer styles associated
+-maybe i could try to nest a model under Company and see what happens
