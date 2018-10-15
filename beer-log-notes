@@ -227,3 +227,8 @@ home of the application
  5. fix companies/:id/beer_styles/:id beerstyle#show
  6. how do i fix /beer_styles/:id (this is terrible)
  7. how do i fix this---> http://localhost:3000/beers?utf8=%E2%9C%93&beer_style=2&commit=Filter (horrible)
+
+
+101518
+-i need to actually correct the order with nesting resources because as stated before, i didn't begin
+ following proper model relationships to begin with
