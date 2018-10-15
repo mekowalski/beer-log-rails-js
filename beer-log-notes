@@ -232,3 +232,5 @@ home of the application
 101518
 -i need to actually correct the order with nesting resources because as stated before, i didn't begin
  following proper model relationships to begin with
+-also running into same issues with BeerStyles#show
+-need to catch up with all the things to work out from above(101118)
