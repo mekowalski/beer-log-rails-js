@@ -234,3 +234,7 @@ home of the application
  following proper model relationships to begin with
 -also running into same issues with BeerStyles#show
 -need to catch up with all the things to work out from above(101118)
+-currently beerstyle id is not working in browser.
+ 1. AR::RecordNotFound in BeerStylesController#show AND Couldn't find BeerStyle without an ID
+ 2. http://localhost:3000/beer_styles.4
+ 3. link_to is <a href="/beer_styles.4">Pilsner</a> (which i don't know how the .4(.id) got here)
