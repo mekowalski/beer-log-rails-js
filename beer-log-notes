@@ -238,3 +238,10 @@ home of the application
  1. AR::RecordNotFound in BeerStylesController#show AND Couldn't find BeerStyle without an ID
  2. http://localhost:3000/beer_styles.4
  3. link_to is <a href="/beer_styles.4">Pilsner</a> (which i don't know how the .4(.id) got here)
+
+
+ 101618
+ -i'm thinking i'll just nest beerstyle and beer under company
+ -maybe also nest beer under beerstyle???
+ -i can nest whatever model as long as it makes sense to nest that way
+ -i still need to fix the odd dynamic filter route
