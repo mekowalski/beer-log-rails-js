@@ -14,12 +14,16 @@
 <table>
   <thead><tr>
     <th>Name</th>
+    <th></th><th></th>
+    <th></th><th></th>
     <th>Delete</th>
   </tr>
   </thead>
   <% @beers.each do |beer| %>
   <tbody>
     <td><%= link_to beer.name, beer_path(beer) %></td>
+    <td></td><th></th>
+    <td></td><th></th>
     <td><%= link_to 'Delete', beer, method: :delete, data: { confirm: "This is forever, do you really want to delete?" } %></td>
   </tbody>
   <% end %>
