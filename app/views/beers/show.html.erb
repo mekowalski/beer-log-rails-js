@@ -5,7 +5,7 @@
 <p>Location: <%= @beer.location %></p>
 <br>
 <h2>Brewing Company: <%= link_to @beer.company.name, company_path(@beer.company) %></h2>
-<h2>Beer Style: <%= link_to @beer.beer_style.name, beer_styles_path(@beer.beer_style)%></h2>
+<h2>Beer Style: <%= link_to @beer.beer_style.name, beer_style_path(@beer.beer_style)%></h2>
 <%#= params.inspect %>
 
 <%= link_to 'Edit', edit_beer_path(@beer) %>
