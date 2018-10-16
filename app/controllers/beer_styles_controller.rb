@@ -8,6 +8,9 @@ class BeerStylesController < ApplicationController
     @beer_style = BeerStyle.find(params[:id])
   end
 
+  # just realized, this is the nesting of beer under beerstyle
+  # eg: beer_styles/:id/beers AND beer_styles/:id/beers/:id
+  # that's what these next 2 actions are doing!!!
   def beers_index
     @beer_style = BeerStyle.find(params[:id])
     @beers = BeerStyle.beers
