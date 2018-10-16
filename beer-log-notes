@@ -245,3 +245,6 @@ home of the application
  -maybe also nest beer under beerstyle???
  -i can nest whatever model as long as it makes sense to nest that way
  -i still need to fix the odd dynamic filter route
+ -create company nesting actions for beer and beerstyles both
+ -reach out to instructor for horrible filter URL
+ -then FREAKING MOVE ON
