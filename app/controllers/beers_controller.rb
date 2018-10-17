@@ -1,5 +1,5 @@
 class BeersController < ApplicationController
-  before_action :load_beer, only: [ :edit, :update]
+  before_action :load_beer, only: [:show, :edit, :update]
 
   def home
     render 'home'
@@ -16,9 +16,6 @@ class BeersController < ApplicationController
   end
 
   def show
-    @beer = Beer.find(params[:id])
-    # ActiveRecord::RecordNotFound in BeersController#show
-    # Couldn't find Beer with 'id'=1
   end
 
   def new
