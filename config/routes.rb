@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   end
 
   resources :beer_styles do
-    resources :beers
+    resources :beers, to: 'beer_styles#beer'
   end
 
   resources :beers

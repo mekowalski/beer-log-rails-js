@@ -6,3 +6,10 @@
     <li><%= link_to company.name, company_path(company) %></li>
   <% end %>
 </ul>
+
+<h2>Beers</h2>
+<ul>
+  <% @beer_style.beers.each do |beer| %>
+    <li><%= link_to beer.name, beer_style_beer_path(beer) %></li>
+  <% end %>
+</ul>

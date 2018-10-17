@@ -275,3 +275,4 @@ home of the application
   1. nest beer under beer_style
   2. just need the beer/show
   3. also add beer to beerstyle show page since i want nested route of '/beer_styles/:id/beer/:id'
+  4. DO NOT FORGET TO DIRECT NESTED BEERS UNDER BEERSTYLES RESOURCES
