@@ -7,12 +7,11 @@ class BeersController < ApplicationController
 
   def index
     @beer_styles = BeerStyle.all
-    if ! params[:beer_style].blank?
+    if !params[:beer_style].blank?
       @beers = Beer.by_beer_style(params[:beer_style])
     else
       @beers = Beer.all
     end
-    @beers = Beer.all
   end
 
   def show

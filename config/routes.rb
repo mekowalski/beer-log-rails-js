@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :beer_styles do
     resources :beers, to: 'beer_styles#beer'
   end
+  get 'beer_styles/:id/beers/', to: 'beer_styles#beer_index'
 
   resources :beers
   patch '/beers/:id', to: 'beer#update'

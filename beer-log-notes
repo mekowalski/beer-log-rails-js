@@ -284,4 +284,5 @@ home of the application
 -Now let's try to incorporate the filter function
   1. beers#index plays a role here
   2. re-incorporate the filter form
-  3.
+  3. do i need to create another action for beer index of beer_style
+  4. do i also need to direct that resource to an action
