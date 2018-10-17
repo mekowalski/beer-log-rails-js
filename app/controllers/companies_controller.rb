@@ -8,4 +8,16 @@ class CompaniesController < ApplicationController
     @company = Company.find(params[:id])
   end
 
+  def beers_index
+    @company = Company.find(params[:id])
+    @beers = @company.beers
+    render template: 'beers/index'
+  end
+
+  def beer
+    @company = Company.find(params[:id])
+    @beer = Beer.find(params[:company_id])
+    render template: 'beers/show'
+  end
+
 end
