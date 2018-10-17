@@ -270,3 +270,8 @@ home of the application
 -some odd things that i don't understand how it's working but works
   1. i don't need direct companies#action for nested beerstyle, it works just being a nested resources
   2. BUT nested beers resources DOES need direct companies#action or else the id= error arises
+
+-Next to work on
+  1. nest beer under beer_style
+  2. just need the beer/show
+  3. also add beer to beerstyle show page since i want nested route of '/beer_styles/:id/beer/:id'

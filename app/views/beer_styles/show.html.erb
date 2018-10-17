@@ -1,5 +1,6 @@
 <h1>Beer Style: <%= @beer_style.name %></h1>
 
+<h2>Companies</h2>
 <ul>
   <% @beer_style.companies.uniq.each do |company| %>
     <li><%= link_to company.name, company_path(company) %></li>

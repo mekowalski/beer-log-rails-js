@@ -6,7 +6,9 @@ Rails.application.routes.draw do
     resources :beers, to: 'companies#beer' # <---this needs to direct to the correct action
   end
 
-  resources :beer_styles
+  resources :beer_styles do
+    resources :beers
+  end
 
   resources :beers
   patch '/beers/:id', to: 'beer#update'
