@@ -270,6 +270,10 @@ home of the application
 -some odd things that i don't understand how it's working but works
   1. i don't need direct companies#action for nested beerstyle, it works just being a nested resources
   2. BUT nested beers resources DOES need direct companies#action or else the id= error arises
+ ***i now know why the id= error was occurring, beer id was calling beers#show.  but because beer is also
+ nested under both Company and BeerStyle, i needed to direct beer to that specific action in order to
+ correctly call and display the beer show as a nested resources. it's all making sense. this makes so much
+ sense now***
 
 -Next to work on
   1. nest beer under beer_style
