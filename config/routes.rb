@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   end
   # get 'companies/:id/beer_styles'
   # get 'companies/:id/beer_styles/id'
+  # get 'companies/:id/beers/:id' <--- this is finally showing properly BUT the id= is an error
   # in companies con i need to create the actions that would nest beerstyle index and show under company
 
   resources :beer_styles

@@ -12,6 +12,7 @@ class CompaniesController < ApplicationController
     @company = Company.find(params[:id])
     @beers = @company.beers
     render template: 'beers/index'
+    # do i need to call this in routes?
   end
 
   def beer
