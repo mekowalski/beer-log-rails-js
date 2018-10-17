@@ -262,3 +262,6 @@ home of the application
   2. i need to make sure that the company actions for both the beers and beerstyles are correct
   3. maybe not nest beer under beerstyle but not sure how to cater the beers#index to the the filter func
   4. beers#index previously have the correct func set up for filter, maybe go back to that
+
+-for the nested routes under companies, i'm going to only use show for both beer and beerstyle since i'm
+ already indexing those models in the company show page
