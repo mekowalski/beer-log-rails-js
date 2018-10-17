@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   resources :companies do
     resources :beer_styles
-    resources :beers
+    resources :beers, to: 'companies#beer'
   end
   # get 'companies/:id/beer_styles'
   # get 'companies/:id/beer_styles/id'
