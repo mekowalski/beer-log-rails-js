@@ -280,3 +280,8 @@ home of the application
   2. just need the beer/show
   3. also add beer to beerstyle show page since i want nested route of '/beer_styles/:id/beer/:id'
   4. DO NOT FORGET TO DIRECT NESTED BEERS UNDER BEERSTYLES RESOURCES
+
+-Now let's try to incorporate the filter function
+  1. beers#index plays a role here
+  2. re-incorporate the filter form
+  3.
