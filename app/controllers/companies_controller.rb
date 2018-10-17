@@ -1,5 +1,5 @@
 class CompaniesController < ApplicationController
-  before_action :load_id, only: [:show, :beer, :beer_index]
+  before_action :load_id, only: [:show, :beer, :beer_style]
 
   def index
     @companies = Company.all
