@@ -253,4 +253,12 @@ home of the application
 101718
 -right now work on company nesting actions
  see how that turns out
--currently unable to next beer and beerstyle routes, not sure why though 
+-currently unable to next beer and beerstyle routes, not sure why though
+-able to get nested routes present and correct but now i'm running into a beers#show error that i thought
+ would be a simple fix, it's not!!!
+
+-Filter Function
+  1. try to re-implement the function
+  2. i need to make sure that the company actions for both the beers and beerstyles are correct
+  3. maybe not nest beer under beerstyle but not sure how to cater the beers#index to the the filter func
+  4. beers#index previously have the correct func set up for filter, maybe go back to that
