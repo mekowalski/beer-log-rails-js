@@ -2,17 +2,11 @@ Rails.application.routes.draw do
   get '/home', to: 'beers#home' #this is kind of nice and i can use home buttom to get to index but not in love
 
   resources :companies do
-    resources :beer_styles
-    resources :beers, to: 'companies#beer'
+    resources :beer_styles # <--- this one doesn't need a direct action, not sure why this is the case
+    resources :beers, to: 'companies#beer' # <---this needs to direct to the correct action
   end
-  # get 'companies/:id/beer_styles'
-  # get 'companies/:id/beer_styles/id'
-  # get 'companies/:id/beers/:id' <--- this is finally showing properly BUT the id= is an error
-  # in companies con i need to create the actions that would nest beerstyle index and show under company
 
   resources :beer_styles
-  # get 'beer_styles/:id/beers', to: 'beer_styles#beers_index'
-  # get 'beer_styles/:id/beers/:id', to: 'beer_styles#beer'
 
   resources :beers
   patch '/beers/:id', to: 'beer#update'

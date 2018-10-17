@@ -265,3 +265,8 @@ home of the application
 
 -for the nested routes under companies, i'm going to only use show for both beer and beerstyle since i'm
  already indexing those models in the company show page
+
+-currently both the beer and beer_style nested routes work correctly
+-some odd things that i don't understand how it's working but works
+  1. i don't need direct companies#action for nested beerstyle, it works just being a nested resources
+  2. BUT nested beers resources DOES need direct companies#action or else the id= error arises

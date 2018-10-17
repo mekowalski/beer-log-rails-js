@@ -8,17 +8,23 @@ class CompaniesController < ApplicationController
     @company = Company.find(params[:id])
   end
 
-  def beers_index
-    @company = Company.find(params[:id])
-    @beers = @company.beers
-    render template: 'beers/index'
-    # do i need to call this in routes?
-  end
+  # def beers_index
+  #   @company = Company.find(params[:id])
+  #   @beers = @company.beers
+  #   render template: 'beers/index'
+  #   # do i need to call this in routes?
+  # end
 
   def beer
     @company = Company.find(params[:id])
     @beer = Beer.find(params[:company_id])
     render template: 'beers/show'
+  end
+
+  def beer_style
+    @company = Company.find(params[:id])
+    @beer_style = BeerStyle.find(params[:company_id])
+    render template: 'beer_styles/show'
   end
 
 end
