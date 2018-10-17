@@ -3,15 +3,15 @@ Rails.application.routes.draw do
 
   resources :companies do
     resources :beer_styles
-    resources :beers, only: [:index, :show]
+    resources :beers
   end
   # get 'companies/:id/beer_styles'
   # get 'companies/:id/beer_styles/id'
   # in companies con i need to create the actions that would nest beerstyle index and show under company
 
   resources :beer_styles
-  get 'beer_styles/:id/beers', to: 'beer_styles#beers_index'
-  get 'beer_styles/:id/beers/:id', to: 'beer_styles#beer'
+  # get 'beer_styles/:id/beers', to: 'beer_styles#beers_index'
+  # get 'beer_styles/:id/beers/:id', to: 'beer_styles#beer'
 
   resources :beers
   patch '/beers/:id', to: 'beer#update'
