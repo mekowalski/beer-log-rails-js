@@ -18,11 +18,11 @@ class BeersController < ApplicationController
   end
 
   def new
-    # @beer = Beer.new
-    # @beer.build_company
-    # @beer.build_beer_style
+    @beer = Beer.new
+    @beer.build_company
+    @beer.build_beer_style
     # for modifying nestes resources, trying for now, not sure if i want this
-    @beer = Beer.new(company_id: params[:company_id])
+    # @beer = Beer.new(company_id: params[:company_id])
   end
 
   def create
