@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :companies do
     resources :beer_styles
     resources :beers, to: 'companies#beer'
+    #L6: is there a way to point only the beer show to this specific con#action
   end
 
   resources :beer_styles do

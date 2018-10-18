@@ -6,6 +6,9 @@
     <li><%= link_to beer.name, company_beer_path(beer) %></li>
   <% end %>
 </ul>
+<div>
+  <%= link_to 'New Beer', new_company_beer_path(@company) %>
+</div>
 
 <h2>Beer Styles</h2>
 <ul>
