@@ -53,6 +53,7 @@ class BeersController < ApplicationController
   private
   def load_beer
     @beer = Beer.find(params[:id])
+    # keep running into this issue when clicking on a Beer nested under BeerStyle and Company
   end
 
   def beer_params

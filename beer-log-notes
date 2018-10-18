@@ -303,3 +303,4 @@ BE A MACHINE TODAY
 -Answered my own question to resolve a possible issue!!!
 
 -Just realized that my 'Create New Beer Style' text_field is gone, Haven't noticed this in a while
+-^^^Fixed this with altering the beers#new but keep running into a beers#show issue with the nested routes
