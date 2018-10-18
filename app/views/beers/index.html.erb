@@ -8,6 +8,7 @@
     <%= select_tag 'beer_style', options_from_collection_for_select(@beer_styles, 'id', 'name'), include_blank: true %>
     <%= submit_tag 'Filter' %>
   <% end %>
+  <!-- attach js event handler, prevent default, grab value of select_tag -->
 </div>
 <br>
 

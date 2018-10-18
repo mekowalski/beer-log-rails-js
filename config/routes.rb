@@ -12,7 +12,6 @@ Rails.application.routes.draw do
     resources :beers
   end
   get 'beer_styles/:id/beers/:id', to: 'beer_styles#beer'
-  # i don't need this because i actually already have an index of the beers associated with the beerstyle
 
   resources :beers
   patch '/beers/:id', to: 'beer#update'

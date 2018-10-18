@@ -18,9 +18,6 @@ class BeerStylesController < ApplicationController
     @beers = @beer_style.beers
     render template: 'beers/index'
   end
-  # comment for now. this is kind of meant for the filter function but maybe i'm wrong because the filter
-  # function is still working and displaying a beer of that style
-  #this is the URL result, no bueno: http://localhost:3000/beers?utf8=%E2%9C%93&beer_style=3&commit=Filter
 
   private
   def load_id
