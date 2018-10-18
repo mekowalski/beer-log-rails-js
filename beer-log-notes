@@ -292,5 +292,9 @@ home of the application
 
 101818
 BE A MACHINE TODAY
--working currently on modifying nested routes
+-Working currently on modifying nested routes
  eg: creating new Beer nested under Company
+ *do i want to do this though? i already created Beer to associate with Company and BeerStyle. if i create
+ a Beer under Company then it will most likely not have an associated BeerStyle. which then i'd have to go
+ to the edit form and include that. but my current validations include attrs of BeerStyle and Company. i
+ may play with this but i really don't like the idea.*
