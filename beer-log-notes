@@ -298,3 +298,6 @@ BE A MACHINE TODAY
  a Beer under Company then it will most likely not have an associated BeerStyle. which then i'd have to go
  to the edit form and include that. but my current validations include attrs of BeerStyle and Company. i
  may play with this but i really don't like the idea.*
+
+-OMG i succesfully created a new beer nested under the company AND i was able to associated a style!!!
+-Answered my own question to resolve a possible issue!!!
