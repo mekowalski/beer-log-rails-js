@@ -3,7 +3,7 @@
 <h2>Beers</h2>
 <ul>
   <% @company.beers.each do |beer| %>
-    <li><%= link_to beer.name, company_beer_path(beer) %></li>
+    <li><%= link_to beer.name, company_beer_path(@company, beer) %></li>
   <% end %>
 </ul>
 <div>
@@ -13,6 +13,6 @@
 <h2>Beer Styles</h2>
 <ul>
   <% @company.beer_styles.uniq.each do |beer_style| %>
-    <li><%= link_to beer_style.name, company_beer_style_path(beer_style) %></li>
+    <li><%= link_to beer_style.name, company_beer_style_path(@company, beer_style) %></li>
   <% end %>
 </ul>

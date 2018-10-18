@@ -10,6 +10,6 @@
 <h2>Beers</h2>
 <ul>
   <% @beer_style.beers.each do |beer| %>
-    <li><%= link_to beer.name, beer_style_beer_path(beer) %></li>
+    <li><%= link_to beer.name, beer_style_beer_path(@beer_style, beer) %></li>
   <% end %>
 </ul>
