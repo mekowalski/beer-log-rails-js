@@ -14,6 +14,7 @@ class BeerStylesController < ApplicationController
   end
 
   def beer_index
+    @beer_styles = BeerStyle.all
     @beers = @beer_style.beers
     render template: 'beers/index'
   end
