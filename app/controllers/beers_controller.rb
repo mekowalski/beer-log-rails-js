@@ -21,7 +21,7 @@ class BeersController < ApplicationController
     @beer = Beer.new
     @beer.build_company
     @beer.build_beer_style
-    # for modifying nestes resources, trying for now, not sure if i want this
+    # for modifying nested resources, trying for now, not sure if i want this
     # @beer = Beer.new(company_id: params[:company_id])
   end
 
@@ -53,7 +53,6 @@ class BeersController < ApplicationController
   private
   def load_beer
     @beer = Beer.find(params[:id])
-    # keep running into this issue when clicking on a Beer nested under BeerStyle and Company
   end
 
   def beer_params

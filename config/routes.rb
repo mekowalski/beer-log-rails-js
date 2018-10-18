@@ -11,7 +11,7 @@ Rails.application.routes.draw do
     resources :beers
   end
   get 'beer_styles/:id/beers/:id', to: 'beer_styles#beer'
-  # get 'beer_styles/:id/beers/', to: 'beer_styles#beer_index'
+  get 'beer_styles/:id/beers/', to: 'beer_styles#beer_index'
   # i don't need this because i actually already have an idex of the beers associated with the beerstyle
 
   resources :beers
