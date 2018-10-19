@@ -308,3 +308,9 @@ BE A MACHINE TODAY
 -Finally fixed the filter URL issue, mostly.  95% fixed. the URL needs to be manually written
 -Filter button isn't able to find the beerstyle id to inject in the url /beer_styles/:id/beers
 -I can modify this with an event handler in javascript
+
+
+101918
+-Machine again even if there are a few other things going on. Still be here when I can be here and give it
+ my all
+-tested the edit beer nested under company and that is working correctly
