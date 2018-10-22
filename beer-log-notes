@@ -314,3 +314,11 @@ BE A MACHINE TODAY
 -Machine again even if there are a few other things going on. Still be here when I can be here and give it
  my all
 -tested the edit beer nested under company and that is working correctly
+
+
+102218
+-when using filter function in the index page, the error is:
+  1. ActiveRecord::RecordNotFound in BeerStylesController#beer_index
+  2. Couldn't find BeerStyle with 'id'=:id
+  *this is due to the part where you can only manually write out the URL with the correct :id.  this isn't
+  working with the actual filter submit.  JS handlers will help this*
