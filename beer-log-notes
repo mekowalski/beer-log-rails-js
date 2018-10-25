@@ -328,3 +328,4 @@ BE A MACHINE TODAY
 -currently i don't have auth because i con;t have users. not sure how to implement this
 -right now my application is solely used by me, as if i'm the only one with the profile and access to it
 -it's meant to be a log(journal entry) of beers tried
+-i may implement user auth&auth in the next layer, not sure though
