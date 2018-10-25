@@ -322,3 +322,9 @@ BE A MACHINE TODAY
   2. Couldn't find BeerStyle with 'id'=:id
   *this is due to the part where you can only manually write out the URL with the correct :id.  this isn't
   working with the actual filter submit.  JS handlers will help this*
+
+
+102518
+-currently i don't have auth because i con;t have users. not sure how to implement this
+-right now my application is solely used by me, as if i'm the only one with the profile and access to it
+-it's meant to be a log(journal entry) of beers tried
