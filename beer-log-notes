@@ -337,6 +337,6 @@ BE A MACHINE TODAY
 [x]#new AND #create
 [x]map GET and POST /login
 []#destroy to handle logging out (technically destroying a session)
-[]maybe create link_to on homepage to LOGIN ---> login page ---> beers index page
+[x]maybe create link_to on homepage to LOGIN ---> login page ---> beers index page
 
 -i don't know what 'protect_from_forgery prepend:' is, will come back after researching it
