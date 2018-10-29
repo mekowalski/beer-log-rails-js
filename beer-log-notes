@@ -329,3 +329,11 @@ BE A MACHINE TODAY
 -right now my application is solely used by me, as if i'm the only one with the profile and access to it
 -it's meant to be a log(journal entry) of beers tried
 -i may implement user auth&auth in the next layer, not sure though
+
+
+102918
+-going to see if i can implement the sessions controller with a login and logout function
+[x]generate sessions controller
+[]#new AND #create
+[]map GET and POST /login
+[]#destroy to handle logging out (technically destroying a session)
