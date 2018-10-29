@@ -8,4 +8,9 @@ class SessionsController < ApplicationController
     session[:username] = params[:username]
     redirect_to '/beers'
   end
+
+  def destroy
+    session.delete :username
+    redirect_to '/home'
+  end
 end

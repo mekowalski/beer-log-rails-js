@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get '/home', to: 'beers#home' #this is kind of nice and i can use home buttom to get to index but not in love
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
+  post '/logout', to: 'sessions#destroy'
 
   resources :companies do
     resources :beer_styles
