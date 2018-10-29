@@ -334,6 +334,9 @@ BE A MACHINE TODAY
 102918
 -going to see if i can implement the sessions controller with a login and logout function
 [x]generate sessions controller
-[]#new AND #create
-[]map GET and POST /login
+[x]#new AND #create
+[x]map GET and POST /login
 []#destroy to handle logging out (technically destroying a session)
+[]maybe create link_to on homepage to LOGIN ---> login page ---> beers index page
+
+-i don't know what 'protect_from_forgery prepend:' is, will come back after researching it
