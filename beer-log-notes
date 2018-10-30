@@ -358,3 +358,6 @@ BE A MACHINE TODAY
 
 -i got the logout button to disappear in the root page but it will not show once a user is logged in
 -do i need to use link_to instead of form?
+
+-current_user is nil, not sure why
+-sessions doesn't seem to capture the username and use it for the conditional purpose

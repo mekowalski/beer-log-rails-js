@@ -11,13 +11,15 @@
 
   <body>
     <h1><%= link_to 'Home', beers_path %></h1>
+    Current user is: <%= current_user %>
+    <%= raise current_user.inspect %>
 
-    <!-- <% if current_user %> -->
+    <% if current_user %>
       <form method="post" action="/logout">
         <input type="submit" value="logout">
       </form>
       <br>
-    <!-- <% end %> -->
+    <% end %>
     <!-- this isn't showing up and i'm not sure why. i thought it would work -->
 
     <%= yield %>
