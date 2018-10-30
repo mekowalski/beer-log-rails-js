@@ -361,3 +361,12 @@ BE A MACHINE TODAY
 
 -current_user is nil, not sure why
 -sessions doesn't seem to capture the username and use it for the conditional purpose
+
+-new link on beers index works
+-none of the beer show links work, get directed to login page!!!
+(well because my beer controller has the :require_login before_action setup)
+-BUT i am logged in at this point, in order to get to the beers index, i need to log in then i should be
+ able to maneuver the app
+L367: THAT WAS THE REASON, upon removal, you can still access beers show
+-BUT if the user is logged in then they should still be able to access all the app
+FRUSTRATING

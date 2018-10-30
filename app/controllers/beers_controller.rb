@@ -1,5 +1,5 @@
 class BeersController < ApplicationController
-  before_action :require_login, :load_beer, only: [:show, :edit, :update]
+  before_action :load_beer, only: [:show, :edit, :update]
 
   def index
     @beer_styles = BeerStyle.all
