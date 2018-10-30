@@ -11,10 +11,11 @@
 
   <body>
     <h1><%= link_to 'Home', beers_path %></h1>
-    <form method="post" action="/logout">
-      <input type="submit" value="logout">
-    </form>
-    <br>
+
+      <form method="post" action="/logout">
+        <input type="submit" value="logout">
+      </form>
+      <br>
 
     <%= yield %>
   </body>

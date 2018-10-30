@@ -1,10 +1,6 @@
 class BeersController < ApplicationController
   before_action :require_login, :load_beer, only: [:show, :edit, :update]
 
-  def home
-    # render 'home'
-  end
-
   def index
     @beer_styles = BeerStyle.all
     if !params[:beer_style].blank?
@@ -49,10 +45,6 @@ class BeersController < ApplicationController
   end
 
   private
-  def require_login
-    return head(:forbidden) unless session.include? :user_id
-  end
-
   def load_beer
     @beer = Beer.find(params[:id])
   end
