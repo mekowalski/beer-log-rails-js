@@ -1,5 +1,5 @@
 class BeersController < ApplicationController
-  before_action :load_beer, only: [:show, :edit, :update]
+  before_action :require_login, :load_beer, only: [:show, :edit, :update]
 
   def home
     render 'home'
@@ -21,8 +21,6 @@ class BeersController < ApplicationController
     @beer = Beer.new
     @beer.build_company
     @beer.build_beer_style
-    # for modifying nested resources, trying for now, not sure if i want this
-    # @beer = Beer.new(company_id: params[:company_id])
   end
 
   def create
@@ -51,6 +49,10 @@ class BeersController < ApplicationController
   end
 
   private
+  def require_login
+    return head(:forbidden) unless session.include? :user_id
+  end
+
   def load_beer
     @beer = Beer.find(params[:id])
   end
