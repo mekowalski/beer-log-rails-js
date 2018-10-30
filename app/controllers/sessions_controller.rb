@@ -12,6 +12,6 @@ class SessionsController < ApplicationController
 
   def destroy
     session.delete :username
-    redirect_to '/home'
+    redirect_to '/'
   end
 end
