@@ -355,3 +355,6 @@ BE A MACHINE TODAY
  logic for this.)
 
 -my before_action isn't really working, i'm able to go to /beers and many other URLs and see content
+
+-i got the logout button to disappear in the root page but it will not show once a user is logged in
+-do i need to use link_to instead of form?
