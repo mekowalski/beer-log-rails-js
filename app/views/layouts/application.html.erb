@@ -11,8 +11,8 @@
 
   <body>
     <h1><%= link_to 'Home', beers_path %></h1>
-    Current user is: <%= current_user %>
-    <%= raise current_user.inspect %>
+    <!-- <%# raise current_user.inspect %>   -->
+    <!-- returns nil -->
 
     <% if current_user %>
       <form method="post" action="/logout">

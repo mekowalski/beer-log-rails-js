@@ -7,6 +7,8 @@ class ApplicationController < ActionController::Base
 
   def current_user
     @current_user = (session[:username]) if session[:username]
+    # raise @current_user.inspect => nil
+    # raise session[:username].inspect => nil
   end
   # this is created but not sure if i'm writing this function correctly, it isn't working in the view
 
