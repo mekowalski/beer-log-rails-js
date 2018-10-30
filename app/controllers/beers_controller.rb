@@ -2,7 +2,7 @@ class BeersController < ApplicationController
   before_action :require_login, :load_beer, only: [:show, :edit, :update]
 
   def home
-    render 'home'
+    # render 'home'
   end
 
   def index

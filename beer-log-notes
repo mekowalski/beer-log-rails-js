@@ -353,3 +353,5 @@ BE A MACHINE TODAY
 -Video review will take the longest but that's okay, do it with pomodoro
 -legitimately i don't want to have logout on the home page alongside the login form(later implement the
  logic for this.)
+
+-my before_action isn't really working, i'm able to go to /beers and many other URLs and see content
