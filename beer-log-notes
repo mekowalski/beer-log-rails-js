@@ -377,3 +377,8 @@ FRUSTRATING
 -it's simpler and involves a User model which is more ideal
 -in video, there aren't associations yet with user and other established models
 -basic login, signup, logout set up
+-create auth branch, merge if the feature works properly, delete branch if i don't like it
+-auth will become more complex but first create basic foundation to understand how it works
+-in future branches i may completely change user feature
+*react/redux project doesn't require user login but i am creating this app and would possibly like to
+allow for user account and login.  could i use a rails auth setup with react/redux?*
