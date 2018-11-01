@@ -370,3 +370,10 @@ BE A MACHINE TODAY
 L367: THAT WAS THE REASON, upon removal, you can still access beers show
 -BUT if the user is logged in then they should still be able to access all the app
 FRUSTRATING
+
+
+110118
+-may be able to finish auth with authentication review video
+-it's simpler and involves a User model which is more ideal
+-in video, there aren't associations yet with user and other established models
+-basic login, signup, logout set up
