@@ -325,7 +325,7 @@ BE A MACHINE TODAY
 
 
 102518
--currently i don't have auth because i con;t have users. not sure how to implement this
+-currently i don't have auth because i don't have users. not sure how to implement this
 -right now my application is solely used by me, as if i'm the only one with the profile and access to it
 -it's meant to be a log(journal entry) of beers tried
 -i may implement user auth&auth in the next layer, not sure though
@@ -388,3 +388,7 @@ allow for user account and login.  could i use a rails auth setup with react/red
 -field_with_errors is not specified in the views but will still work on app
 -maybe refactor a lot of my views in order to remove hardcode field_with_errors?
 -currently when a beer is created without a field then the error message shows up and i like that part
+
+-practice auth&auth with video, not alongside lesson but alongside video
+-video helps explain user creation, login, logout and access to application without any association
+-need to figure out how to go back to the version of 102518(version before auth implementation)
