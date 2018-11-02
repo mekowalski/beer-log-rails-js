@@ -382,3 +382,9 @@ FRUSTRATING
 -in future branches i may completely change user feature
 *react/redux project doesn't require user login but i am creating this app and would possibly like to
 allow for user account and login.  could i use a rails auth setup with react/redux?*
+
+
+110218
+-field_with_errors is not specified in the views but will still work on app
+-maybe refactor a lot of my views in order to remove hardcode field_with_errors?
+-currently when a beer is created without a field then the error message shows up and i like that part
