@@ -21,9 +21,15 @@ Login
   -if user isn't logged in then they can't see app, go back to login page
   -need to log a user in after users#create with sessions
 
--issues: ActionController::InvalidAuthenticityToken
+-login issues: ActionController::InvalidAuthenticityToken
   -in appcon, added 'protect_from_forgery with: :exception, prepend: true'
   -still don't know why i keep running into this error
   -currently stopped at raise params.inspect therefore not sure how signup will work, OUT of this in regular
    mode
   -signing up with email is hitting users#create in the least
+
+-sessions issues:
+  -root page of :3000 or :3000/ is allowing access to page
+  -before_action is set but not being called
+  -not sure if it's because i legitimately haven't 'logged out' therefore i'm still granted access
+  (don't know how to delete my cookie in browser)
