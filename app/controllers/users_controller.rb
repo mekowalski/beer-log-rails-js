@@ -4,6 +4,10 @@ class UsersController < ApplicationController
   end
 
   def create
-    raise params.inspect
+    @user = User.new
+    @user.email = params[:user][:email]
+    @user.save
+
+    redirect_to beers_path
   end
 end
