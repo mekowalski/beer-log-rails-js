@@ -35,3 +35,5 @@ Login
   (don't know how to delete my cookie in browser)
   -routes is currently GET '/logout', to: 'sessions#destroy', not curious why HTTP isn't POST
   -lesson advised against GET '/logout' and to use POST '/logout'
+  -logout properly works to reset session and redirect to login page
+  -root page properly works by not giving access to app without logging in first
