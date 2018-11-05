@@ -16,7 +16,7 @@ Build Registration before
   -->will not allow login with empty field(YAY)
 
 Login
-[] GET /login -form
+[x] GET /login -form
 [] POST /sessions -log the user in
   -if user isn't logged in then they can't see app, go back to login page
   -need to log a user in after users#create with sessions
