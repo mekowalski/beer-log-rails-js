@@ -7,6 +7,7 @@ class UsersController < ApplicationController
     @user = User.new
     @user.email = params[:user][:email]
     if @user.save
+      # log in a User
       redirect_to beers_path
     else
       render 'users/new'
