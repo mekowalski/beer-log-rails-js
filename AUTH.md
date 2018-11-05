@@ -4,8 +4,10 @@
   -email
 
 -What URLs are needed
-[] GET /users/new -form
-[] POST /users -create the user
+Build Registration before
+[] GET /users/new -form users#new
+[] POST /users -create the user users#create
 
+Login
 [] GET /login -form
 [] POST /sessions -log the user in
