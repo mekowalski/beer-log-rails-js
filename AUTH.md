@@ -9,10 +9,11 @@ Build Registration before
 [x] POST /users -create the user users#create
 [x] build new template for registration
 [x] build form for signing up
-[] conditional if user may not be saved
+[x] conditional if user may not be saved
   -don't want an empty field
   -email isn't unique, they need to be unique
   -not email format
+  -->will not allow login with empty field(YAY)
 
 Login
 [] GET /login -form
