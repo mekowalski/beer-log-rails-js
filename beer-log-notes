@@ -392,3 +392,9 @@ allow for user account and login.  could i use a rails auth setup with react/red
 -practice auth&auth with video, not alongside lesson but alongside video
 -video helps explain user creation, login, logout and access to application without any association
 -need to figure out how to go back to the version of 102518(version before auth implementation)
+
+
+110518
+-incorporate auth from video, new branch, can merge if t works well
+-maybe see if i should revert to code version from 102518
+-if auth works from video then i may just merge and use that collaborated code
