@@ -33,3 +33,5 @@ Login
   -before_action is set but not being called
   -not sure if it's because i legitimately haven't 'logged out' therefore i'm still granted access
   (don't know how to delete my cookie in browser)
+  -routes is currently GET '/logout', to: 'sessions#destroy', not curious why HTTP isn't POST
+  -lesson advised against GET '/logout' and to use POST '/logout'
