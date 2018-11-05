@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root 'beers#index' #this is kind of nice and i can use home buttom to get to index but not in love
   get '/login', to: 'sessions#new'
   post '/sessions', to: 'sessions#create'
-  # post '/logout', to: 'sessions#destroy'
+  get '/logout', to: 'sessions#destroy'
 
   resources :users, only: [:new, :create]
 
