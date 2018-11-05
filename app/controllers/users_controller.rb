@@ -6,8 +6,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new
     @user.email = params[:user][:email]
-    @user.save
-
-    redirect_to beers_path
+    if @user.save
+      redirect_to beers_path
+    else
+      render 'users/new'
+    end
   end
 end
