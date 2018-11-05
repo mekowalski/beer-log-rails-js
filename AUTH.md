@@ -7,8 +7,12 @@
 Build Registration before
 [x] GET /users/new -form users#new
 [x] POST /users -create the user users#create
-[] build new template for registration
-  -build form for signing up
+[x] build new template for registration
+[x] build form for signing up
+[] conditional if user may not be saved
+  -don't want an empty field
+  -email isn't unique, they need to be unique
+  -not email format
 
 Login
 [] GET /login -form
