@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     @user = User.new
     @user.email = params[:user][:email]
     if @user.save
-      redirect_to beers_path
+      redirect_to root_path
     else
       render :new
     end
