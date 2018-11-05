@@ -8,6 +8,7 @@ Build Registration before
 [x] GET /users/new -form users#new
 [x] POST /users -create the user users#create
 [] build new template for registration
+  -build form for signing up
 
 Login
 [] GET /login -form
