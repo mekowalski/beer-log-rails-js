@@ -18,6 +18,8 @@ Build Registration before
 Login
 [] GET /login -form
 [] POST /sessions -log the user in
+  -if user isn't logged in then they can't see app, go back to login page
+  -need to log a user in after users#create with sessions
 
 -issues: ActionController::InvalidAuthenticityToken
   -in appcon, added 'protect_from_forgery with: :exception, prepend: true'
