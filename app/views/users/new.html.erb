@@ -1,1 +1,7 @@
 <h1>Signup Here! </h1>
+  <%= form_for(@user) do |f| %>
+    <%= f.text_field :email %>
+  <% end %>
+  <form action="/users" method="post">
+    <input type="submit" >
+  </form>
