@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  protect_from_forgery prepend:
+  # protect_from_forgery prepend:
 
   def create
     if params[:username].blank?
