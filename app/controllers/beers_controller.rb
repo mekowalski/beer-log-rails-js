@@ -2,7 +2,6 @@ class BeersController < ApplicationController
   before_action :load_beer, only: [:show, :edit, :update]
 
   def index
-    # if you're not logged in, you can't see this, go back to login page
     @beer_styles = BeerStyle.all
     if !params[:beer_style].blank?
       @beers = Beer.by_beer_style(params[:beer_style])

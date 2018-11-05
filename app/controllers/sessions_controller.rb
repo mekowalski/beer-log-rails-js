@@ -1,26 +1,12 @@
 class SessionsController < ApplicationController
-  # protect_from_forgery prepend:
-
-  # def create
-  #   if params[:username].blank?
-  #     redirect_to '/login'
-  #   else
-  #     session[:username] = params[:username]
-  #     # raise session[:username].inspect => returns 'mkowalski'
-  #     redirect_to '/beers'
-  #   end
-  # end
-  #
-  # def destroy
-  #   session.delete :username
-  #   redirect_to '/'
-  # end
-
   def new
   end
 
   def create
-    user = User.find_by(params[:email])
+    user = User.find_by(email: params[:email])
+    cookies[:email] = user.email
+
+    redirect_to beers_path
     # how does a user log in???
     # HTTP is stateless protocol
     # every request is independent of another
