@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new'
   post '/sessions', to: 'sessions#create'
   get '/logout', to: 'sessions#destroy'
+  get '/auth/google/callback', to: 'sessions#create'
 
   resources :users, only: [:new, :create]
 

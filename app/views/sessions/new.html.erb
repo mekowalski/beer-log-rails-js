@@ -3,4 +3,7 @@
     <%= text_field_tag :email, '', placeholder: 'login with your email' %>
     <%= text_field_tag :password, '', placeholder: 'and password' %>
     <%= submit_tag %>
+    <br><br>
+
+    <%= link_to 'Login with Google', auth_google_callback_path %>
   <% end %>
