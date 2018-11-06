@@ -46,7 +46,8 @@ Login
 [x] add omniauth and omniauth-google
 [x] add omniauth.rb file
 [x] add dotenv-rails and create .env file
-[] create link to initiate google oauth process
-[] add GET request in routes.rb
+[x] create link to initiate google oauth process
+[x] add GET request in routes.rb
 [] work out sessions#create with private
 [] re-render view upon logging in via oauth
+[] inspect returned authentication data
