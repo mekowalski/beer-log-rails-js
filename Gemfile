@@ -6,6 +6,8 @@ ruby '2.3.3'
 # OmniAuth used for Google
 gem 'omniauth'
 gem 'omniauth-google'
+# dotenv-rails used for ensuring environment variables are set securely
+gem 'dotenv-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
 # Use sqlite3 as the database for Active Record
