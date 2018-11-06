@@ -51,3 +51,7 @@ Login
 [] work out sessions#create with private
 [] re-render view upon logging in via oauth
 [] inspect returned authentication data
+
+-currently having issues with how to modify sessions#create to actually login a User via google
+ (OmniAuth::NoSessionError, Session Expired
+  fail(OmniAuth::NoSessionError, "Session Expired") if session["oauth"].nil?)
