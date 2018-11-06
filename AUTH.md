@@ -37,3 +37,5 @@ Login
   -lesson advised against GET '/logout' and to use POST '/logout'
   -logout properly works to reset session and redirect to login page
   -root page properly works by not giving access to app without logging in first
+
+  -Successfully created password with bcyrpt and authenticate password
