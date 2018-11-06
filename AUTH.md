@@ -42,8 +42,11 @@ Login
 
 
 # Step 2: Create Omniauth successfully
-[x] create credentials
-[x] add omniauth and omniauth-provider
+[x] create credentials (google)
+[x] add omniauth and omniauth-google
 [x] add omniauth.rb file
-[] add dotenv-rails and create .env file
-[]
+[x] add dotenv-rails and create .env file
+[] create link to initiate google oauth process
+[] add GET request in routes.rb
+[] work out sessions#create with private
+[] re-render view upon logging in via oauth
