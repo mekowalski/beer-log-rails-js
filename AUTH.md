@@ -39,3 +39,11 @@ Login
   -root page properly works by not giving access to app without logging in first
 
   -Successfully created password with bcyrpt and authenticate password
+
+
+# Step 2: Create Omniauth successfully
+[x] create credentials
+[x] add omniauth and omniauth-provider
+[x] add omniauth.rb file
+[] add dotenv-rails and create .env file
+[]
