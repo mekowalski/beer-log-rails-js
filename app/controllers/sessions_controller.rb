@@ -1,22 +1,30 @@
 class SessionsController < ApplicationController
+  require 'securerandom'
+
   def new
   end
 
   def create
-    # raise params.inspect this is being hit with link_to google login!!!
-    # user = User.find_by(email: params[:email])
-    # if user && user.authenticate(params[:password])
-    #   session[:user_id] = user.id
-    #   redirect_to root_path
-    # else
-    #   render 'sessions/new'
-    # end
-    # raise params.inspect
-    user = User.find_or_create_by(user_id auth['user_id']) do |u|
-      u.email = auth['info']['email']
-      u.password = auth['info']['password']
+    if params[:email]
+      user = User.find_by(email: params[:email])
+      if user && user.authenticate(params[:password])
+        session[:user_id] = user.id
+        redirect_to root_path
+      else
+        render 'sessions/new'
+      end
+    elsif auth
+      # raise params.inspect
+      user = User.find_or_create_by(uid: auth['uid']) do |u|
+        u.uid = auth['uid']
+        u.email = auth['info']['email']
+        u.password = SecureRandom.hex(8)
+      end
+      session[:user_id] = user.id
+      redirect_to root_path
+    else
+      render 'sessions/new'
     end
-    session[:user_id] = user.id
   end
 
   def destroy
