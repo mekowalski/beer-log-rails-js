@@ -57,3 +57,7 @@ Login
   fail(OmniAuth::NoSessionError, "Session Expired") if session["oauth"].nil?)
 
 -need to figure out the configuration of omniauth google
+-currently link_to google login is hitting sessions#create(good)
+-it's the #create action that i need correct
+-also, User model doesn't have attr of :uid
+-there's only the :user_id when their instance is created then they have an id
