@@ -3,7 +3,6 @@ class SessionsController < ApplicationController
   end
 
   def create
-    # raise params.inspect
     # raise params.inspect this is being hit with link_to google login!!!
     # user = User.find_by(email: params[:email])
     # if user && user.authenticate(params[:password])
@@ -12,6 +11,7 @@ class SessionsController < ApplicationController
     # else
     #   render 'sessions/new'
     # end
+    # raise params.inspect
     user = User.find_or_create_by(user_id auth['user_id']) do |u|
       u.email = auth['info']['email']
       u.password = auth['info']['password']
