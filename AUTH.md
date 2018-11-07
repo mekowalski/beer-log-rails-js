@@ -1,23 +1,23 @@
 # Step 1: Allow Users to register and login
 -How does this impact DB
--[x] User model
+[x] User model
   -email
 
 -What URLs are needed
 Build Registration before
--[x] GET /users/new -form users#new
--[x] POST /users -create the user users#create
--[x] build new template for registration
--[x] build form for signing up
--[x] conditional if user may not be saved
+[x] GET /users/new -form users#new
+[x] POST /users -create the user users#create
+[x] build new template for registration
+[x] build form for signing up
+[x] conditional if user may not be saved
   -don't want an empty field
   -email isn't unique, they need to be unique
   -not email format
   -->will not allow login with empty field(YAY)
 
 Login
--[x] GET /login -form
--[] POST /sessions -log the user in
+[x] GET /login -form
+[] POST /sessions -log the user in
   -if user isn't logged in then they can't see app, go back to login page
   -need to log a user in after users#create with sessions
 
@@ -42,15 +42,15 @@ Login
 
 
 # Step 2: Create Omniauth successfully
--[x] create credentials (google)
--[x] add omniauth and omniauth-google
--[x] add omniauth.rb file
--[x] add dotenv-rails and create .env file
--[x] create link to initiate google oauth process
--[x] add GET request in routes.rb
--[x] work out sessions#create with private
--[x] re-render view upon logging in via oauth
--[x] inspect returned authentication data
+[x] create credentials (google)
+[x] add omniauth and omniauth-google
+[x] add omniauth.rb file
+[x] add dotenv-rails and create .env file
+[x] create link to initiate google oauth process
+[x] add GET request in routes.rb
+[x] work out sessions#create with private
+[x] re-render view upon logging in via oauth
+[x] inspect returned authentication data
 
 -currently having issues with how to modify sessions#create to actually login a User via google
  (OmniAuth::NoSessionError, Session Expired
