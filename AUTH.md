@@ -48,9 +48,9 @@ Login
 [x] add dotenv-rails and create .env file
 [x] create link to initiate google oauth process
 [x] add GET request in routes.rb
-[] work out sessions#create with private
-[] re-render view upon logging in via oauth
-[] inspect returned authentication data
+[x] work out sessions#create with private
+[x] re-render view upon logging in via oauth
+[x] inspect returned authentication data
 
 -currently having issues with how to modify sessions#create to actually login a User via google
  (OmniAuth::NoSessionError, Session Expired
@@ -61,3 +61,10 @@ Login
 -it's the #create action that i need correct
 -also, User model doesn't have attr of :uid
 -there's only the :user_id when their instance is created then they have an id
+
+-Successfully made google oauth work
+  1. i had to enable Contacts API and Google+ API
+  2. i had to change from omniauth-google to omniauth-google-oauth2
+  3. added uid to users
+  4. checked into auth object in browser terminal
+  5. retrieved auth['uid'] and auth['info']['email']
