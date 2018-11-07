@@ -55,3 +55,5 @@ Login
 -currently having issues with how to modify sessions#create to actually login a User via google
  (OmniAuth::NoSessionError, Session Expired
   fail(OmniAuth::NoSessionError, "Session Expired") if session["oauth"].nil?)
+
+-need to figure out the configuration of omniauth google
