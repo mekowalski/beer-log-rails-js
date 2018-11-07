@@ -5,7 +5,8 @@ ruby '2.3.3'
 
 # OmniAuth used for Google
 gem 'omniauth'
-gem 'omniauth-google'
+# gem 'omniauth-google'
+gem 'omniauth-google_oauth2'
 # dotenv-rails used for ensuring environment variables are set securely
 gem 'dotenv-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
