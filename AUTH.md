@@ -77,6 +77,12 @@ Login
       else
         render 'sessions/new'
       end
-    elsif
-    
+ 7. elsif check auth object
+      find or create user by auth['uid'] from auth object in terminal
+        uid, email = respective auth attribute
+        password is securerandom
+      end
+      create new session with redirect
+    else
+      render 'sessions/new'
     end
