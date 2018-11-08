@@ -68,3 +68,15 @@ Login
   3. added uid to users
   4. checked into auth object in browser terminal
   5. retrieved auth['uid'] and auth['info']['email']
+  6. build if-else conditional
+    if email is present
+      find user by email
+      if then authenticate the user password
+        and login user traditionally with email and password
+        creating a new session with redirect
+      else
+        render 'sessions/new'
+      end
+    elsif
+    
+    end
