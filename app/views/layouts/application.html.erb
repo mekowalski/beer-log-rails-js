@@ -10,17 +10,6 @@
   </head>
 
   <body>
-    <h1><%= link_to 'Home', beers_path %></h1>
-    <!-- <%# raise current_user.inspect %>   -->
-    <!-- returns nil -->
-
-    <% if current_user %>
-      <form method="post" action="/logout">
-        <input type="submit" value="logout">
-      </form>
-      <br>
-    <% end %>
-    <!-- this isn't showing up and i'm not sure why. i thought it would work -->
 
     <%= yield %>
   </body>

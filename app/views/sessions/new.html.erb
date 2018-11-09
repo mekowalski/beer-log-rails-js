@@ -1,4 +1,9 @@
-<form method="post">
-  <input name="username">
-  <input type="submit" value="login">
-</form>
+<h1>Login Here!</h1>
+  <%= form_tag(sessions_path) do %>
+    <%= text_field_tag :email, '', placeholder: 'login with your email' %>
+    <%= text_field_tag :password, '', placeholder: 'and password' %>
+    <%= submit_tag %>
+    <br><br>
+
+    <%= link_to 'Login with Google', '/auth/google_oauth2' %>
+  <% end %>

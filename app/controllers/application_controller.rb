@@ -1,19 +1,19 @@
 class ApplicationController < ActionController::Base
-  helper_method :current_user
+  # inheritance point where all controllers will utilize methods here
+  protect_from_forgery with: :exception, prepend: true
 
-  def home
-    require_login
+  def authentication_required
+    if !logged_in?
+      redirect_to login_path
+    end
+  end
+
+  def logged_in?
+    !!current_user
   end
 
   def current_user
-    @current_user = (session[:username]) if session[:username]
-    # raise @current_user.inspect => nil
-    # raise session[:username].inspect => nil
+    @current_user ||= User.find(session[:user_id]) if session[:user_id]
   end
-  # this is created but not sure if i'm writing this function correctly, it isn't working in the view
-
-  private
-  def require_login
-    redirect_to controller: 'sessions', action: 'create' unless current_user
-  end
+  helper_method #can call this in views with explicit direction of helper_method macro
 end

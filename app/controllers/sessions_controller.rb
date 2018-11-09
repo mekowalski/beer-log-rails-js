@@ -1,18 +1,39 @@
 class SessionsController < ApplicationController
-  protect_from_forgery prepend:
+  require 'securerandom'
+
+  def new
+  end
 
   def create
-    if params[:username].blank?
-      redirect_to '/login'
+    if params[:email]
+      user = User.find_by(email: params[:email])
+      if user && user.authenticate(params[:password])
+        session[:user_id] = user.id
+        redirect_to root_path
+      else
+        render 'sessions/new'
+      end
+    elsif auth
+      # raise params.inspect
+      user = User.find_or_create_by(uid: auth['uid']) do |u|
+        u.uid = auth['uid']
+        u.email = auth['info']['email']
+        u.password = SecureRandom.hex(8)
+      end
+      session[:user_id] = user.id
+      redirect_to root_path
     else
-      session[:username] = params[:username]
-      # raise session[:username].inspect => returns 'mkowalski'
-      redirect_to '/beers'
+      render 'sessions/new'
     end
   end
 
   def destroy
-    session.delete :username
-    redirect_to '/'
+    reset_session
+    redirect_to login_path
+  end
+
+  private
+  def auth
+    request.env['omniauth.auth']
   end
 end

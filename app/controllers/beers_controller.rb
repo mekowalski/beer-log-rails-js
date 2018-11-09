@@ -1,4 +1,5 @@
 class BeersController < ApplicationController
+  before_action :authentication_required
   before_action :load_beer, only: [:show, :edit, :update]
 
   def index
