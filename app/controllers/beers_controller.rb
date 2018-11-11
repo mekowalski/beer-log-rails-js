@@ -5,6 +5,7 @@ class BeersController < ApplicationController
   def index
     @beer_styles = BeerStyle.all
     @beers = Beer.search(params)
+    @beers = Beer.all
   end
 
   def show

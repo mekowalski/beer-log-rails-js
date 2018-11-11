@@ -18,7 +18,8 @@ class Beer < ActiveRecord::Base
     if query.present?
       Beer.by_beer_style(query)
     else
-      Beer.all
+      Beer.all #this isn't displaying with beers#index, it's an empty collection
+      #unless i have Beer.all directly within beers#index
     end
   end
 end
