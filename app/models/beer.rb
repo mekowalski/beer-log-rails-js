@@ -14,7 +14,7 @@ class Beer < ActiveRecord::Base
     where(beer_style: beer_style_id)
   end
 
-  def search(query)
+  def self.search(query)
     if query.present?
       Beer.by_beer_style(query)
     else
