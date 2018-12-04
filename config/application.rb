@@ -15,6 +15,9 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+# config.assets.paths << Rails.root.join('lib', 'randomeimagefolder')
+# to include images if neccesary
+
 module BeerLog
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
