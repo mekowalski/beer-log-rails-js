@@ -1,7 +1,7 @@
 // playing in .js to practice Rails + AJAX
 //[X]Hijack click event
 //[X]Once in click event, fire AJAX request to get DATA
-//[]Need to place that DATA in the DOM, (add to page)
+//[X]Need to place that DATA in the DOM, (add to page)
 
 $(function() {
   $('a.companies-beer').on('click', function(e) {
