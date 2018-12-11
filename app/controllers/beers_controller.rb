@@ -6,6 +6,7 @@ class BeersController < ApplicationController
     @beer_styles = BeerStyle.all
     @beers = Beer.search(params)
     @beers = Beer.all
+    # render 'beers/index', layout: false
   end
 
   def show
