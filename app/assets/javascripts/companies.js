@@ -11,10 +11,10 @@ $(function() {
       method: 'GET',
       url: this.href
     })
-    .done(function(data) {
+    .done(function(data) { //calback function after AJAX(L10-13) is fired
       //GET the response
       console.log(data) //woot woot, this logged all the data of the Company's(guinness) Beer
-      // debugger
+      debugger //debugger shows data's value, and appends data to body correctly!!!
       //Want to load that data into the DOM
     })
     e.preventDefault()
