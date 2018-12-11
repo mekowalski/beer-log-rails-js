@@ -9,11 +9,6 @@ $(function() {
     //Just clicked on this link
     //use the HREF attr to as the URL
 
-    //rewrite high-level abstraction
-    $.get(this.href).success(function(response) {
-      $('div.beers').html(response)
-    })
-
     //low-level
     // $.ajax({
     //   method: 'GET',
@@ -25,6 +20,16 @@ $(function() {
     //   //sometimes will append to the DOM
     //   //Want to load that data into the DOM
     // })
+
+    //Requesting HTML
+    //rewrite high-level abstraction
+    // $.get(this.href).success(function(response) {
+    //   $('div.beers').html(response)
+    // })
+
+    //Requesting JSON
+
+
     e.preventDefault()
   })
 })
