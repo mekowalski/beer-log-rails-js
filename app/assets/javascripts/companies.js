@@ -28,7 +28,12 @@ $(function() {
     // })
 
     //Requesting JSON
-
+    $.get(this.href).success(function(json) {
+      //i'm not iterating because i'm specificially working with a show, not an index
+      // debugger
+      //i also am not able to figure this one out so HTML version works well for now
+      $('div.beers').append(json)
+    })
 
     e.preventDefault()
   })
