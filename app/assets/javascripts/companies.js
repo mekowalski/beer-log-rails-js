@@ -14,6 +14,7 @@ $(function() {
     .done(function(data) {
       //GET the response
       console.log(data) //woot woot, this logged all the data of the Company's(guinness) Beer
+      // debugger
       //Want to load that data into the DOM
     })
     e.preventDefault()

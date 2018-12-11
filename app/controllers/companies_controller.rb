@@ -10,7 +10,7 @@ class CompaniesController < ApplicationController
 
   def beer
     @beer = Beer.find(params[:company_id])
-    render template: 'beers/show', layout: false
+    render template:'beers/show'
   end
 
   def beer_style
