@@ -4,8 +4,8 @@
 // playing in .js to practice Rails + AJAX
 
 $(function() {
-  $('a.companies').on('click', function(e) {
-    alert('you clicked this link')
+  $('a.companies-beer').on('click', function(e) {
     e.preventDefault()
+    alert('you clicked this link')
   })
 })
