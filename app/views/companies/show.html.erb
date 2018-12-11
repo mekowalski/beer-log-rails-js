@@ -6,6 +6,10 @@
     <li><%= link_to beer.name, company_beer_path(@company, beer), class: 'companies-beer' %></li>
   <% end %>
 </ul>
+<div class="beers">
+  <h3>Append the clicked-on beer right here, under it's link</h3>
+</div>
+
 <div>
   <%= link_to 'New Beer', new_company_beer_path(@company) %>
 </div>
