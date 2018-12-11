@@ -3,9 +3,9 @@
 // You can use CoffeeScript in this file: http://coffeescript.org/
 // playing in .js to practice Rails + AJAX
 
-$(function() { //this helps load the entire document for the click event to occur
+$(function() {
   $('a.companies').on('click', function(e) {
-    e.preventDefault()
     alert('you clicked this link')
+    e.preventDefault()
   })
 })
