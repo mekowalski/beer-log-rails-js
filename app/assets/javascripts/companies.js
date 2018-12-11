@@ -1,6 +1,6 @@
 // playing in .js to practice Rails + AJAX
 //[X]Hijack click event
-//[]Once in click event, fire AJAX request to get DATA
+//[X]Once in click event, fire AJAX request to get DATA
 //[]Need to place that DATA in the DOM, (add to page)
 
 $(function() {
@@ -13,7 +13,8 @@ $(function() {
     })
     .done(function(response) { //calback function after AJAX(L10-13) is fired
       //GET the response
-      $('div.beers').html(response)
+      $('div.beers').html(response) //this kind of works: it will sometimes go to a new page or
+      //sometimes will append to the DOM
       //Want to load that data into the DOM
     })
     e.preventDefault()
