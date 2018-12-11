@@ -9,8 +9,8 @@ class BeersController < ApplicationController
   end
 
   def show
-    # render 'beers/show', layout: false
-    render json: @beer #YES this worked in the browser
+    render 'beers/show', layout: false
+    # render json: @beer #YES this worked in the browser
   end
 
   def new

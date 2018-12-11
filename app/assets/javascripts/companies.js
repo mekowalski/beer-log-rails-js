@@ -3,9 +3,10 @@
 //[X]Once in click event, fire AJAX request to get DATA
 //[X]Need to place that DATA in the DOM, (add to page)
 //[X]Rewrite AJAX in simpler way
+//MANUALLY TRIGGERING AJAX - CLIENT SIDE LOGIC MODEL
 
-$(function() {
-  $('a.companies-beer').on('click', function(e) {
+// $(function() {
+  // $('a.companies-beer').on('click', function(e) {
     //Just clicked on this link
     //use the HREF attr to as the URL
 
@@ -28,13 +29,25 @@ $(function() {
     // })
 
     //Requesting JSON
-    $.get(this.href).success(function(json) {
-      //i'm not iterating because i'm specificially working with a show, not an index
-      // debugger
-      //i also am not able to figure this one out so HTML version works well for now
-      $('div.beers').append(json)
-    })
+    // $.get(this.href).success(function(json) {
+    //   //i'm not iterating because i'm specificially working with a show, not an index
+    //   // debugger
+    //   //i also am not able to figure this one out so HTML version works well for now
+    //   $('div.beers').append(json)
+    // })
 
+  //   e.preventDefault()
+  // })
+// })
+
+//ASK SERVER WHAT WHAT TO DO VIA AJAX - SERVER SIDE AJAX MODEL
+//video at 55:59
+$(function() { //click on link and fire AJAX request to server
+  $('a.companies-beer').on('click', function(e) {
+    $.ajax({ //server will respond with JavaScript(containing instructions on what to do), not HTML or JSON
+      url: this.href,
+      dataType: 'script'
+    })
     e.preventDefault()
   })
 })
