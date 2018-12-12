@@ -33,6 +33,13 @@ $(function() {
   })
 })
 
+$(function() {
+  $('a.companies-new-beer').on('click', function(e) {
+    e.preventDefault()
+    alert('this worked!')
+  })
+})
+
     //Requesting JSON
     // $.get(this.href).success(function(json) {
     //   //i'm not iterating because i'm specificially working with a show, not an index
