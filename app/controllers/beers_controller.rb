@@ -10,7 +10,6 @@ class BeersController < ApplicationController
 
   def show
     render 'beers/show', layout: false
-    # render json: @beer #YES this worked in the browser
   end
 
   def new
