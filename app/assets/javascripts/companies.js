@@ -24,9 +24,14 @@
 
     //Requesting HTML
     //rewrite high-level abstraction
-    // $.get(this.href).success(function(response) {
-    //   $('div.beers').html(response)
-    // })
+$(function() {
+  $('a.companies-beer').on('click', function(e) {
+    $.get(this.href).success(function(response) {
+      $('div.beers').html(response)
+    })
+    e.preventDefault()
+  })
+})
 
     //Requesting JSON
     // $.get(this.href).success(function(json) {
@@ -41,12 +46,13 @@
 // })
 
 //ASK SERVER WHAT WHAT TO DO VIA AJAX - SERVER SIDE AJAX MODEL
-$(function() { //click on link and fire AJAX request to server
-  $('a.companies-beer').on('click', function(e) {
-    $.ajax({ //server will respond with JavaScript(containing instructions on what to do), not HTML or JSON
-      url: this.href,
-      dataType: 'script' //this is expecting a js view file such ie: show.js.erb
-    })
-    e.preventDefault()
-  })
-})
+//I do not like this version, it's more abstraction that i'm not familiar with
+// $(function() { //click on link and fire AJAX request to server
+//   $('a.companies-beer').on('click', function(e) {
+//     $.ajax({ //server will respond with JavaScript(containing instructions on what to do), not HTML or JSON
+//       url: this.href,
+//       dataType: 'script' //this is expecting a js view file such ie: show.js.erb
+//     })
+//     e.preventDefault()
+//   })
+// })
