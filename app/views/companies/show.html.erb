@@ -9,9 +9,20 @@
 <div class="beers">
 </div>
 
-<div>
-  <%= link_to 'New Beer', new_company_beer_path(@company) %>
-</div>
+<!-- <div>
+  <%#= link_to 'New Beer', new_company_beer_path(@company) %>
+</div> -->
+<form>
+  <p>New Beer</p>
+  <textarea></textarea>
+  <p><input type="submit"></p>
+</form>
+<!-- ^^^THIS IS NOT RIGHT
+
+-Need to somehow use the form when creating a new Beer and append that to the list of current beers
+-Maybe need to first hijack the New Beer list to append to the DOM
+-Then have the form to fill out information
+-Then append that new Beer to the list of current beers(with a link as the others have)-->
 
 <h2>Beer Styles</h2>
 <ul>
