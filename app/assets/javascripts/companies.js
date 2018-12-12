@@ -41,7 +41,6 @@
 // })
 
 //ASK SERVER WHAT WHAT TO DO VIA AJAX - SERVER SIDE AJAX MODEL
-//video at 55:59
 $(function() { //click on link and fire AJAX request to server
   $('a.companies-beer').on('click', function(e) {
     $.ajax({ //server will respond with JavaScript(containing instructions on what to do), not HTML or JSON
