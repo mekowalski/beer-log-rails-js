@@ -41,6 +41,7 @@ $(function() {
     e.preventDefault()
   })
 })
+//video at 19:00
 
     //Requesting JSON
     // $.get(this.href).success(function(json) {
