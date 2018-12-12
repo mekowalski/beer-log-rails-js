@@ -46,7 +46,7 @@ $(function() { //click on link and fire AJAX request to server
   $('a.companies-beer').on('click', function(e) {
     $.ajax({ //server will respond with JavaScript(containing instructions on what to do), not HTML or JSON
       url: this.href,
-      dataType: 'script'
+      dataType: 'script' //this is expecting a js view file such ie: show.js.erb
     })
     e.preventDefault()
   })
