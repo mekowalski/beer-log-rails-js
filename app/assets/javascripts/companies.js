@@ -35,8 +35,10 @@ $(function() {
 
 $(function() {
   $('a.companies-new-beer').on('click', function(e) {
+    $.get(this.href).success(function(response) {
+      $('div.new-beers').html(response)
+    })
     e.preventDefault()
-    alert('this worked!')
   })
 })
 
