@@ -67,6 +67,14 @@ $(function() {
 
     console.log(data)
     //Send POST request to correct place
+    $.ajax({
+      type: 'POST',
+      url: url,
+      data: data,
+      success: function(response) {
+        debugger
+      }
+    })
   })
 })
 
