@@ -37,7 +37,7 @@ $(function() {
 //This should maybe be named newCompanyBeerForm
 //hijack form and append to DOM
 $(function() {
-  $('a.companies-new-beer').on('click', function(e) {
+  $('a.companies-new-form').on('click', function(e) {
     $.get(this.href).success(function(response) {
       $('div.new-beers').html(response)
     })
@@ -51,6 +51,12 @@ $(function() {
 $(function() {
   $('#new_beer').on('submit', function(e) {
     alert('you clicked submit')
+    console.log(this)
+    //=> ﻿﻿﻿﻿﻿﻿<form class="new_beer" id="new_beer" action="/beers" accept-charset="UTF-8" method="post">…</form>
+    //need URL to submit the POST request to
+    //need the form data
+
+    //Send POST request to correct place
     e.preventDefault()
   })
 })
