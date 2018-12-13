@@ -48,21 +48,28 @@ $(function() {
 //creating the handler for submitting form and adding new beer to current list of beers
 //Maybe this should be named newCompanyBeer
 //hijack submit and prevent default
+// $(function() {
+//   $('#new_beer').on('submit', function(e) {
+//     //need URL to submit the POST request to
+//     //need the form data
+//     //low level (but i really don't understand this at all)
+//     $.ajax({
+//       type: ($("input[name='_method']").val() || this.method),
+//       url: this.action,
+//       data: $(this).serialize(),
+//       success: function(response) {//unable to figure this out
+//         console.log(response)
+//       }
+//     })
+//     //Send POST request to correct place
+//     e.preventDefault()
+//   })
+// })
+//
 $(function() {
   $('#new_beer').on('submit', function(e) {
-    //need URL to submit the POST request to
-    //need the form data
-    //low level (but i really don't understand this at all)
-    $.ajax({
-      type: ($("input[name='_method']").val() || this.method),
-      url: this.action,
-      data: $(this).serialize(),
-      success: function(response) {//unable to figure this out
-        console.log(response)
-      }
-    })
-    //Send POST request to correct place
     e.preventDefault()
+    alert('this is working')
   })
 })
 
