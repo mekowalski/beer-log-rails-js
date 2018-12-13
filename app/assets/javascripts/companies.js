@@ -68,13 +68,14 @@ $(function() {
 //
 $(function() {
   $('#new_beer').on('submit', function(e) {
-    $.post(this.input).success(function(data) {
+    $.post(this.input).success(function(data) { //don't think .input is correct for the submit
       console.log(data)
     })
     e.preventDefault()
     // alert('this is working')
   })
 })
+//issue: POST http://localhost:3000/companies/1 404(Not Found)
 
     //Requesting JSON
     // $.get(this.href).success(function(json) {
