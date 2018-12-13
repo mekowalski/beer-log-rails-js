@@ -51,8 +51,11 @@ $(function() {
 $(function() {
   $('#new_beer').on('submit', function(e) {
     alert('you clicked submit')
-    console.log(this)
-    //=> ﻿﻿﻿﻿﻿﻿<form class="new_beer" id="new_beer" action="/beers" accept-charset="UTF-8" method="post">…</form>
+    url: this.action
+    console.log(url)
+
+    data:
+    //=> <form class="new_beer" id="new_beer" action="/beers" accept-charset="UTF-8" method="post">…</form>
     //need URL to submit the POST request to
     //need the form data
 
