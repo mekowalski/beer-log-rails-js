@@ -68,8 +68,11 @@ $(function() {
 //
 $(function() {
   $('#new_beer').on('submit', function(e) {
+    $.post(this.input).success(function(data) {
+      console.log(data)
+    })
     e.preventDefault()
-    alert('this is working')
+    // alert('this is working')
   })
 })
 
