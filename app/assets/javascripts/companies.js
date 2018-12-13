@@ -39,7 +39,7 @@ $(function() {
 $(function() {
   $('a.companies-new-form').on('click', function(e) {
     $.get(this.href).success(function(response) {
-      $('div.new-beers').html(response)
+      $('div.new-form').html(response)
     })
     e.preventDefault()
   })
