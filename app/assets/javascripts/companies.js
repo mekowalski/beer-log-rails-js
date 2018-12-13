@@ -60,7 +60,7 @@ $(function() {
     data = {
       'authenticity_token': $("input[name='authenticity_token']").val(),
       'beer': {
-        'content': $('input#beer_name').val() //sweet this returns the correct beer name attribute
+        'content': $('#beer_name').val() //sweet this returns the correct beer name attribute
         //now how do i retrieve all the attributes of the beer
       }
     }
