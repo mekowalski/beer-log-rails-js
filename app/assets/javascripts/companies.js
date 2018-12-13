@@ -50,31 +50,19 @@ $(function() {
 //hijack submit and prevent default
 $(function() {
   $('#new_beer').on('submit', function(e) {
-    e.preventDefault()
     //need URL to submit the POST request to
-    url = this.action
-    //=> <form class="new_beer" id="new_beer" action="/beers" accept-charset="UTF-8" method="post">
-    console.log(url)
-
     //need the form data
-    data = {
-      'authenticity_token': $("input[name='authenticity_token']").val(),
-      'beer': {
-        'content': $('#beer_name').val() //sweet this returns the correct beer name attribute
-        //now how do i retrieve all the attributes of the beer
-      }
-    }
-
-    console.log(data)
-    //Send POST request to correct place
+    //low level (but i really don't understand this at all)
     $.ajax({
-      type: 'POST',
-      url: url,
-      data: data,
-      success: function(response) {
+      type: ($("input[name='_method']").val() || this.method),
+      url: this.action,
+      data: $(this).serialize(),
+      success: function(response) {//unable to figure this out
         console.log(response)
       }
     })
+    //Send POST request to correct place
+    e.preventDefault()
   })
 })
 
