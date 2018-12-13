@@ -21,6 +21,7 @@ class BeersController < ApplicationController
   def create
     @beer = Beer.new(beer_params)
     if @beer.save
+      # render 'beers/new', layout: false
       redirect_to @beer
     else
       render :new
