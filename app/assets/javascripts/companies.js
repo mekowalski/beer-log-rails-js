@@ -35,6 +35,7 @@ $(function() {
 })
 
 //This should maybe be named newCompanyBeerForm
+//hijack form and append to DOM
 $(function() {
   $('a.companies-new-beer').on('click', function(e) {
     $.get(this.href).success(function(response) {
@@ -46,8 +47,12 @@ $(function() {
 
 //creating the handler for submitting form and adding new beer to current list of beers
 //Maybe this should be named newCompanyBeer
+//hijack submit and prevent default
 $(function() {
-  $('')
+  $('#new_beer').on('submit', function(e) {
+    alert('you clicked submit')
+    e.preventDefault()
+  })
 })
 
     //Requesting JSON
