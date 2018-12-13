@@ -50,17 +50,23 @@ $(function() {
 //hijack submit and prevent default
 $(function() {
   $('#new_beer').on('submit', function(e) {
-    alert('you clicked submit')
-    url: this.action
+    e.preventDefault()
+    //need URL to submit the POST request to
+    url = this.action
+    //=> <form class="new_beer" id="new_beer" action="/beers" accept-charset="UTF-8" method="post">
     console.log(url)
 
-    data:
-    //=> <form class="new_beer" id="new_beer" action="/beers" accept-charset="UTF-8" method="post">…</form>
-    //need URL to submit the POST request to
     //need the form data
+    data = {
+      'authenticity_token': $("input[name='authenticity_token']").val(),
+      'beer': {
+        'content': $('input#beer_name').val() //sweet this returns the correct beer name attribute
+        //now how do i retrieve all the attributes of the beer
+      }
+    }
 
+    console.log(data)
     //Send POST request to correct place
-    e.preventDefault()
   })
 })
 
