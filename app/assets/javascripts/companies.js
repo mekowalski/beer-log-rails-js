@@ -24,6 +24,7 @@
 
     //Requesting HTML
     //rewrite high-level abstraction
+//This should maybe be named companyBeer
 $(function() {
   $('a.companies-beer').on('click', function(e) {
     $.get(this.href).success(function(response) {
@@ -33,6 +34,7 @@ $(function() {
   })
 })
 
+//This should maybe be named newCompanyBeerForm
 $(function() {
   $('a.companies-new-beer').on('click', function(e) {
     $.get(this.href).success(function(response) {
@@ -41,7 +43,12 @@ $(function() {
     e.preventDefault()
   })
 })
-//video at 19:00
+
+//creating the handler for submitting form and adding new beer to current list of beers
+//Maybe this should be named newCompanyBeer
+$(function() {
+  $('')
+})
 
     //Requesting JSON
     // $.get(this.href).success(function(json) {
