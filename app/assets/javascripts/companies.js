@@ -22,8 +22,8 @@
     //   //Want to load that data into the DOM
     // })
 
-    //Requesting HTML
-    //rewrite high-level abstraction
+//Requesting HTML
+//rewrite high-level abstraction
 //This should maybe be named companyBeer
 $(function() {
   $('a.companies-beer').on('click', function(e) {
